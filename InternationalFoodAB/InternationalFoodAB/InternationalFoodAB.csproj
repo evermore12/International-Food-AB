@@ -50,11 +50,11 @@
     <Compile Include="Classes\Admin.cs" />
     <Compile Include="Classes\ErrorHandler.cs" />
     <Compile Include="Classes\FileManager.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="frmMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmMainForm.Designer.cs">
+      <DependentUpon>frmMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Ingredient.cs" />
     <Compile Include="Program.cs" />
@@ -73,6 +73,9 @@
     <Compile Include="ucLogIn.Designer.cs">
       <DependentUpon>ucLogIn.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmMainForm.resx">
+      <DependentUpon>frmMainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
