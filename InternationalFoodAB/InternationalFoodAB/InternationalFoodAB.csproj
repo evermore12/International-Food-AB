@@ -46,21 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\Account\Account.cs" />
-    <Compile Include="src\Account\Admin.cs" />
+    <Compile Include="Classes\Account.cs" />
+    <Compile Include="Classes\Admin.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\Ingredients\Ingredient.cs" />
+    <Compile Include="Classes\Ingredient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\Recipe\Recipe.cs" />
-    <Compile Include="src\Recipe\RecipeType.cs" />
+    <Compile Include="Classes\Recipe.cs" />
+    <Compile Include="Classes\RecipeType.cs" />
     <Compile Include="Repository.cs" />
-    <Compile Include="src\Account\User.cs" />
+    <Compile Include="Classes\User.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -86,11 +86,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Programskiss.txt" />
-    <None Include="src\Resources\salad.png" />
-    <None Include="src\Resources\soup.png" />
-    <None Include="src\Resources\cake.png" />
-    <None Include="src\Resources\meat.png" />
-    <None Include="src\Resources\fish.png" />
+    <None Include="Classes\Resources\salad.png" />
+    <None Include="Classes\Resources\soup.png" />
+    <None Include="Classes\Resources\cake.png" />
+    <None Include="Classes\Resources\meat.png" />
+    <None Include="Classes\Resources\fish.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
