@@ -80,5 +80,10 @@
   <ItemGroup>
     <Content Include="Programskiss.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\Account\" />
+    <Folder Include="src\Ingredients\" />
+    <Folder Include="src\Recipe\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
