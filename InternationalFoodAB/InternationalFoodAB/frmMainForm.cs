@@ -12,7 +12,6 @@ namespace InternationalFoodAB
 {
     public partial class frmMainForm : Form
     {
-        public frmMainForm()
         public Account LoggedInAccount { get; set; }
         public Form1()
         {
