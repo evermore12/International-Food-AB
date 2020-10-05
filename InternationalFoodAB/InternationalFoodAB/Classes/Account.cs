@@ -23,7 +23,7 @@ namespace InternationalFoodAB
         public Account(string email, string password)
         {
             this.Email = email;
-            this.Password = email;
+            this.Password = password;
         }
 
         //Constructor med 3 parameter

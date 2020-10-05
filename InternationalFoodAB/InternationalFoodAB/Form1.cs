@@ -12,7 +12,7 @@ namespace InternationalFoodAB
 {
     public partial class Form1 : Form
     {
-        public Account LoggedInAccount { get; set; }
+        public bool IsLoggedIn { get; set; }
         public Form1()
         {
             InitializeComponent();
