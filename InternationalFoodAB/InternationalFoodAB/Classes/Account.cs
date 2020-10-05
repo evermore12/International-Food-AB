@@ -56,7 +56,7 @@ namespace InternationalFoodAB
 
         public bool CheckInlog()
         {
-            if (Email == "admin@mail.se" && Password == "King123") return true;
+            if (Email == "admin@mail.se" && Password == "king123") return true;
             else return false;
 
         }
