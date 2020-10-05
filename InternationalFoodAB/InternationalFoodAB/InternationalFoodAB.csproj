@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
-    <Compile Include="Admin.cs" />
+    <Compile Include="src\Account\Account.cs" />
+    <Compile Include="src\Account\Admin.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,7 +60,7 @@
     <Compile Include="src\Recipe\Recipe.cs" />
     <Compile Include="src\Recipe\RecipeType.cs" />
     <Compile Include="Repository.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="src\Account\User.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -92,8 +92,6 @@
     <None Include="src\Resources\meat.png" />
     <None Include="src\Resources\fish.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\Account\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
