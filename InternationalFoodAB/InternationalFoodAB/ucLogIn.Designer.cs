@@ -33,6 +33,7 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblLösenord = new System.Windows.Forms.Label();
             this.cmdLogIn = new System.Windows.Forms.Button();
+            this.cmdClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtEmail
@@ -81,10 +82,21 @@
             this.cmdLogIn.UseVisualStyleBackColor = true;
             this.cmdLogIn.Click += new System.EventHandler(this.cmdLogIn_Click);
             // 
+            // cmdClose
+            // 
+            this.cmdClose.Location = new System.Drawing.Point(488, 22);
+            this.cmdClose.Name = "cmdClose";
+            this.cmdClose.Size = new System.Drawing.Size(34, 23);
+            this.cmdClose.TabIndex = 4;
+            this.cmdClose.Text = "X";
+            this.cmdClose.UseVisualStyleBackColor = true;
+            this.cmdClose.Click += new System.EventHandler(this.cmdClose_Click);
+            // 
             // ucLogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cmdClose);
             this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.lblLösenord);
             this.Controls.Add(this.lblEmail);
@@ -104,5 +116,6 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblLösenord;
         private System.Windows.Forms.Button cmdLogIn;
+        private System.Windows.Forms.Button cmdClose;
     }
 }

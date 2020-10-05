@@ -73,8 +73,8 @@
     <Compile Include="ucLogIn.Designer.cs">
       <DependentUpon>ucLogIn.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmMainForm.resx">
-      <DependentUpon>frmMainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
