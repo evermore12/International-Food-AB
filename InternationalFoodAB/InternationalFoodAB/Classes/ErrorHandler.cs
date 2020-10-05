@@ -10,7 +10,7 @@ namespace InternationalFoodAB.Classes
     {
         public static void Log(Exception error)
         {
-            
+
         }
     }
 }

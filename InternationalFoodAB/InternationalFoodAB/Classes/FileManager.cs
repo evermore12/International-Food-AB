@@ -15,15 +15,15 @@ namespace InternationalFoodAB.Classes
         {
             using (StreamWriter writer = new StreamWriter(path, append))
             {
-                
+
             }
         }
         public static void Read(string path)
         {
             string row = "";
-            using(StreamReader reader = new StreamReader(path))
+            using (StreamReader reader = new StreamReader(path))
             {
-                while((row = reader.ReadLine()) != null)
+                while ((row = reader.ReadLine()) != null)
                 {
 
                 }

@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Classes\Account.cs" />
     <Compile Include="Classes\Admin.cs" />
+    <Compile Include="Classes\ErrorHandler.cs" />
+    <Compile Include="Classes\FileManager.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
