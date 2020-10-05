@@ -25,14 +25,5 @@ namespace InternationalFoodAB
             logInContron.Show();
             logInContron.BringToFront();
         }
-
-        private void SearchRecipe()
-        {
-            string searchWord = txtSearchWord.Text;
-            if(.Text.ToLower().Contains(searchWord) && .Text.ToLower().Contains("Lax"))
-            {
-
-            }
-        }
     }
 }
