@@ -17,5 +17,11 @@ namespace InternationalFoodAB
             InitializeComponent();
         }
 
+        private void cmdLogIn_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail.Text;
+            string password = txtPassword.Text;
+
+        }
     }
 }
