@@ -12,6 +12,8 @@ namespace InternationalFoodAB
 {
     public partial class frmMainForm : Form
     {
+
+        public bool IsLoggedIn { get; set; }
         public frmMainForm()
         {
             InitializeComponent();
