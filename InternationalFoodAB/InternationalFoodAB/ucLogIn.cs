@@ -20,6 +20,7 @@ namespace InternationalFoodAB
             MainForm = mainForm;
 
             this.Left = (MainForm.Width - this.Width) / 2;
+            this.Top = (MainForm.Height - this.Height) / 2;
         }
 
         private void cmdLogIn_Click(object sender, EventArgs e)
@@ -28,8 +29,11 @@ namespace InternationalFoodAB
 
             if (logIn.CheckInlog())
             {
-                MainForm.
+                MessageBox.Show("Korrekt inloggning");
+                MainForm.IsLoggedIn = true;
+                this.Hide();
             }
+            else MessageBox.Show("Felaktig inloggning");
 
         }
 
