@@ -14,11 +14,11 @@ namespace InternationalFoodAB
 
         public Repository()
         {
-            //RecipeTypeList = new List<RecipeType> { new RecipeType("Kötträtter", InternationalFoodAB.Properties.Resources.meat),
-            //                                        new RecipeType("Fiskrätter", InternationalFoodAB.Properties.Resources.fish),
-            //                                        new RecipeType("Sallader", InternationalFoodAB.Properties.Resources.salad),
-            //                                        new RecipeType("Soppor", InternationalFoodAB.Properties.Resources.soup),
-            //                                        new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.cake)};
+            RecipeTypeList = new List<RecipeType> { new RecipeType("Kötträtter", InternationalFoodAB.Properties.Resources.Meat),
+                                                    new RecipeType("Fiskrätter", InternationalFoodAB.Properties.Resources.Fish),
+                                                    new RecipeType("Sallader", InternationalFoodAB.Properties.Resources.Salad),
+                                                    new RecipeType("Soppor", InternationalFoodAB.Properties.Resources.Soup),
+                                                    new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.Cake)};
         }
 
     }

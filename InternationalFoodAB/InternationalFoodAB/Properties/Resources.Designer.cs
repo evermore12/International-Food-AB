@@ -61,11 +61,61 @@ namespace InternationalFoodAB.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Cake {
+            get {
+                object obj = ResourceManager.GetObject("Cake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to  .
         /// </summary>
         public static string ErrorLog {
             get {
                 return ResourceManager.GetString("ErrorLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Fish {
+            get {
+                object obj = ResourceManager.GetObject("Fish", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Meat {
+            get {
+                object obj = ResourceManager.GetObject("Meat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Salad {
+            get {
+                object obj = ResourceManager.GetObject("Salad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Soup {
+            get {
+                object obj = ResourceManager.GetObject("Soup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
