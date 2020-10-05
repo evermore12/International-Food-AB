@@ -63,6 +63,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,6 +80,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Programskiss.txt" />
+    <None Include="Resources\salad.png" />
+    <None Include="Resources\soup.png" />
+    <None Include="Resources\cake.png" />
+    <None Include="Resources\meat.png" />
+    <None Include="Resources\fish.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\Account\" />
