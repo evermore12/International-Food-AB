@@ -62,10 +62,12 @@
     <Compile Include="Classes\Recipe.cs" />
     <Compile Include="Classes\RecipeType.cs" />
     <Compile Include="Repository.cs" />
-    <Compile Include="Classes\User.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="ucLogIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLogIn.Designer.cs">
+      <DependentUpon>ucLogIn.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
