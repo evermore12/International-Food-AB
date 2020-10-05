@@ -1,0 +1,17 @@
+﻿
+
+International food AB
+
+Klasser:
+	Ingredients
+		Name
+		Image
+	Recipe
+		Name
+		Type
+		Description
+		List<Ingredients>
+	Account
+		SUB: UserAccount
+		SUB: AdminAccount
+
