@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accounts.txt" />
-    <Content Include="ErrorLog.txt" />
+    <Content Include="Classes\Resources\ErrorLog.txt" />
     <Content Include="Programskiss.txt" />
     <None Include="Resources\Soup.png" />
     <None Include="Resources\Salad.png" />
@@ -107,7 +107,9 @@
     <None Include="Classes\Resources\soup.png" />
     <None Include="Classes\Resources\cake.png" />
     <None Include="Classes\Resources\meat.png" />
-    <None Include="Classes\Resources\fish.png" />
+    <None Include="Classes\Resources\fish.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
