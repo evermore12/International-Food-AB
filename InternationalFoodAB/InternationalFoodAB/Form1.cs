@@ -12,9 +12,19 @@ namespace InternationalFoodAB
 {
     public partial class Form1 : Form
     {
+        public Account LoggedInAccount { get; set; }
         public Form1()
         {
             InitializeComponent();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ucLogIn logInContron = new ucLogIn(this);
+            this.Controls.Add(logInContron);
+            logInContron.Show();
+            logInContron.BringToFront();
         }
     }
 }

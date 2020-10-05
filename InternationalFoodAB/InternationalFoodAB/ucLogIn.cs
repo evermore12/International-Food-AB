@@ -12,9 +12,14 @@ namespace InternationalFoodAB
 {
     public partial class ucLogIn : UserControl
     {
-        public ucLogIn()
+
+        public Form1 MainForm { get; set; }
+        public ucLogIn(Form1 mainForm)
         {
             InitializeComponent();
+            MainForm = mainForm;
+
+            this.Left = (MainForm.Width - this.Width) / 2;
         }
 
         private void cmdLogIn_Click(object sender, EventArgs e)
@@ -23,9 +28,14 @@ namespace InternationalFoodAB
 
             if (logIn.CheckInlog())
             {
-                
+                MainForm.
             }
 
+        }
+
+        private void cmdClose_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
