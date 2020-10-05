@@ -61,11 +61,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Recipe.cs" />
     <Compile Include="Classes\RecipeType.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Repository.cs" />
     <Compile Include="Classes\User.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -74,7 +69,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ucLogIn.resx">
       <DependentUpon>ucLogIn.cs</DependentUpon>
@@ -96,11 +90,7 @@
     <Content Include="Accounts.txt" />
     <Content Include="Classes\Resources\ErrorLog.txt" />
     <Content Include="Programskiss.txt" />
-    <None Include="Resources\Soup.png" />
-    <None Include="Resources\Salad.png" />
-    <None Include="Resources\Meat.png" />
-    <None Include="Resources\Fish.png" />
-    <None Include="Resources\Cake.png" />
+    <None Include="Resources\ErrorLog.txt" />
     <None Include="Classes\Resources\salad.png" />
     <None Include="Classes\Resources\soup.png" />
     <None Include="Classes\Resources\cake.png" />
