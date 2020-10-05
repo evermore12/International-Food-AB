@@ -31,6 +31,7 @@ namespace InternationalFoodAB
             {
                 MessageBox.Show("Korrekt inloggning");
                 MainForm.IsLoggedIn = true;
+                MainForm.LoggedIn(txtEmail.Text);
                 this.Hide();
             }
             else MessageBox.Show("Felaktig inloggning");

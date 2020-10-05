@@ -20,12 +20,17 @@ namespace InternationalFoodAB
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void cmdLogIn_Click(object sender, EventArgs e)
         {
             ucLogIn logInContron = new ucLogIn(this);
             this.Controls.Add(logInContron);
             logInContron.Show();
             logInContron.BringToFront();
+        }
+
+        public void LoggedIn(string email)
+        {
+            lblAccount.Text = "Inloggad som: " + email;
         }
     }
 }
