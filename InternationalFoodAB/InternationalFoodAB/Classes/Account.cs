@@ -36,6 +36,15 @@ namespace InternationalFoodAB
 
         public void AdminLogin()
         {
+            //alt2
+            string Username = "Admin";
+            string Password = "King123";
+            if (Username != "Admin" && Password != "King123")
+            {
+                //Messagebox visar att inloggningen är felaktig.
+            }
+
+
             //alt1
             if (UserName != "Admin" && Password != "King123")
             {
