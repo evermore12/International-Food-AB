@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace InternationalFoodAB.Classes
 {
-    class ErrorHandler
+    public static class ErrorHandler
     {
+        public static void Log(Exception error)
+        {
+            
+        }
     }
 }

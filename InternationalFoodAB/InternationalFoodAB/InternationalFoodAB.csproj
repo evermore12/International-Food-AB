@@ -87,6 +87,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Classes\ErrorLog.txt" />
     <Content Include="Programskiss.txt" />
     <None Include="Classes\Resources\salad.png" />
     <None Include="Classes\Resources\soup.png" />
