@@ -12,6 +12,7 @@ namespace InternationalFoodAB
 {
     public partial class frmAddRecipe : Form
     {
+        public Recipe NewRecipe { get; set; }
         public frmAddRecipe()
         {
             InitializeComponent();
