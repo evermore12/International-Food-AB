@@ -97,7 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Accounts.txt" />
-    <Content Include="ErrorLog.txt" />
+    <Content Include="Classes\Resources\ErrorLog.txt" />
     <Content Include="Programskiss.txt" />
     <None Include="Classes\Resources\salad.png" />
     <None Include="Classes\Resources\soup.png" />

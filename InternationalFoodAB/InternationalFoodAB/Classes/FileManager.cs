@@ -11,7 +11,7 @@ namespace InternationalFoodAB.Classes
     public static class FileManager
     {
 
-        public static void Write(string text, string path, bool append)
+        public static void Write(string path, string text, bool append)
         {
             using (StreamWriter writer = new StreamWriter(path, append))
             {
