@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace InternationalFoodAB
 {
-    public partial class Form1 : Form
+    public partial class frmMainForm : Form
     {
         public bool IsLoggedIn { get; set; }
         public Form1()
