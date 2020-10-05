@@ -19,13 +19,6 @@ namespace InternationalFoodAB
                                                     new RecipeType("Sallader", InternationalFoodAB.Properties.Resources.salad),
                                                     new RecipeType("Soppor", InternationalFoodAB.Properties.Resources.soup),
                                                     new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.cake)};
-
-
-
-
-
-
-
         }
 
     }
