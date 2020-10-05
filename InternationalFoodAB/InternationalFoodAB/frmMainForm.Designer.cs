@@ -133,7 +133,7 @@
             // 
             // txtSearchWord
             // 
-            this.txtSearchWord.Location = new System.Drawing.Point(20, 46);
+            this.txtSearchWord.Location = new System.Drawing.Point(20, 45);
             this.txtSearchWord.Multiline = true;
             this.txtSearchWord.Name = "txtSearchWord";
             this.txtSearchWord.Size = new System.Drawing.Size(501, 25);
