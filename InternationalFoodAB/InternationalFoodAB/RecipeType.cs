@@ -8,6 +8,6 @@ namespace InternationalFoodAB
 {
     public class RecipeType
     {
-        public int MyProperty { get; set; }
+        public string Name { get; set; }
     }
 }
