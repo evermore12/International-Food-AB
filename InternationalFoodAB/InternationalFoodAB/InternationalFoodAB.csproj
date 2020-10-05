@@ -82,6 +82,9 @@
     <EmbeddedResource Include="frmAddRecipe.resx">
       <DependentUpon>frmAddRecipe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMainForm.resx">
+      <DependentUpon>frmMainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

@@ -41,6 +41,8 @@
             this.clnType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clnTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clnDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.cmdLogIn = new System.Windows.Forms.Button();
+            this.lblAccount = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSoup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSalad)).BeginInit();
@@ -60,7 +62,7 @@
             this.groupBox1.Controls.Add(this.cmdSearch);
             this.groupBox1.Controls.Add(this.txtSearchWord);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(465, 311);
+            this.groupBox1.Location = new System.Drawing.Point(575, 477);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(557, 141);
             this.groupBox1.TabIndex = 0;
@@ -143,7 +145,7 @@
             // 
             this.grbRecipe.Controls.Add(this.listView1);
             this.grbRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbRecipe.Location = new System.Drawing.Point(21, 12);
+            this.grbRecipe.Location = new System.Drawing.Point(131, 178);
             this.grbRecipe.Name = "grbRecipe";
             this.grbRecipe.Size = new System.Drawing.Size(1001, 283);
             this.grbRecipe.TabIndex = 1;
@@ -179,11 +181,33 @@
             this.clnDescription.Text = "Beskrivning";
             this.clnDescription.Width = 508;
             // 
+            // cmdLogIn
+            // 
+            this.cmdLogIn.Location = new System.Drawing.Point(1169, 28);
+            this.cmdLogIn.Name = "cmdLogIn";
+            this.cmdLogIn.Size = new System.Drawing.Size(108, 54);
+            this.cmdLogIn.TabIndex = 2;
+            this.cmdLogIn.Text = "Logga in";
+            this.cmdLogIn.UseVisualStyleBackColor = true;
+            this.cmdLogIn.Click += new System.EventHandler(this.cmdLogIn_Click);
+            // 
+            // lblAccount
+            // 
+            this.lblAccount.AutoSize = true;
+            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.Location = new System.Drawing.Point(45, 28);
+            this.lblAccount.Name = "lblAccount";
+            this.lblAccount.Size = new System.Drawing.Size(70, 13);
+            this.lblAccount.TabIndex = 3;
+            this.lblAccount.Text = "Ej inloggad";
+            // 
             // frmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 469);
+            this.ClientSize = new System.Drawing.Size(1311, 708);
+            this.Controls.Add(this.lblAccount);
+            this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.grbRecipe);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMainForm";
@@ -197,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picCake)).EndInit();
             this.grbRecipe.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -215,6 +240,8 @@
         private System.Windows.Forms.ColumnHeader clnTitle;
         private System.Windows.Forms.ColumnHeader clnDescription;
         public System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button cmdLogIn;
+        private System.Windows.Forms.Label lblAccount;
     }
 }
 
