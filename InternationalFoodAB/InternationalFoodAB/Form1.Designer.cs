@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.picFish = new System.Windows.Forms.PictureBox();
             this.cmdSearch = new System.Windows.Forms.Button();
             this.txtSearchWord = new System.Windows.Forms.TextBox();
-            this.picFish = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFish)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +49,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sök efter recept";
+            // 
+            // picFish
+            // 
+            this.picFish.InitialImage = null;
+            this.picFish.Location = new System.Drawing.Point(20, 78);
+            this.picFish.Name = "picFish";
+            this.picFish.Size = new System.Drawing.Size(53, 50);
+            this.picFish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picFish.TabIndex = 3;
+            this.picFish.TabStop = false;
             // 
             // cmdSearch
             // 
@@ -66,21 +77,22 @@
             this.txtSearchWord.Size = new System.Drawing.Size(455, 25);
             this.txtSearchWord.TabIndex = 1;
             // 
-            // picFish
+            // button1
             // 
-            this.picFish.InitialImage = null;
-            this.picFish.Location = new System.Drawing.Point(20, 78);
-            this.picFish.Name = "picFish";
-            this.picFish.Size = new System.Drawing.Size(53, 50);
-            this.picFish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picFish.TabIndex = 3;
-            this.picFish.TabStop = false;
+            this.button1.Location = new System.Drawing.Point(929, 57);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1058, 469);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -97,6 +109,7 @@
         private System.Windows.Forms.Button cmdSearch;
         private System.Windows.Forms.TextBox txtSearchWord;
         public System.Windows.Forms.PictureBox picFish;
+        private System.Windows.Forms.Button button1;
     }
 }
 
