@@ -60,6 +60,12 @@
     <Compile Include="src\Recipe\Recipe.cs" />
     <Compile Include="src\Recipe\RecipeType.cs" />
     <Compile Include="Repository.cs" />
+    <Compile Include="ucLogIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucLogIn.Designer.cs">
+      <DependentUpon>ucLogIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -71,6 +77,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ucLogIn.resx">
+      <DependentUpon>ucLogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
