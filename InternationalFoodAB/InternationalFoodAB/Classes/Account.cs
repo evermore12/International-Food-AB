@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InternationalFoodAB
 {
-    public abstract class Account
+    public class Account
     {
         //Properties
         public string UserName { get; set; }
@@ -37,16 +37,18 @@ namespace InternationalFoodAB
         public void AdminLogin()
         {
             //alt2
-            string Username = "Admin";
+         /*   string Username = "Admin";
             string Password = "King123";
-            if (Username != "Admin" && Password != "King123")
+            string Email = "Admin1@gmail.com";
+
+           if (Username != "Admin" && Password != "King123" && Email != "Admin1@gmail.com")
             {
                 //Messagebox visar att inloggningen är felaktig.
-            }
+            } */
 
 
             //alt1
-            if (UserName != "Admin" && Password != "King123")
+            if (UserName != "Admin" && Password != "King123" && Email != "Admin1@gmail.com")
             {
                 //Messagebox visar att inloggningen är felaktig.
             }
