@@ -36,6 +36,7 @@ namespace InternationalFoodAB
 
         public void AdminLogin()
         {
+            //alt1
             if (UserName != "Admin" && Password != "King123")
             {
                 //Messagebox visar att inloggningen är felaktig.
