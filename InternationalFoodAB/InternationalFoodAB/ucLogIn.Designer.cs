@@ -96,6 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Controls.Add(this.cmdClose);
             this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.lblLösenord);
