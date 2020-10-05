@@ -28,37 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblLösenord = new System.Windows.Forms.Label();
             this.cmdLogIn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(200, 96);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(343, 26);
-            this.textBox1.TabIndex = 0;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(150, 78);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(258, 26);
+            this.txtEmail.TabIndex = 0;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(200, 151);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(343, 26);
-            this.textBox2.TabIndex = 0;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(150, 123);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(258, 26);
+            this.txtPassword.TabIndex = 0;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(116, 100);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Location = new System.Drawing.Point(87, 81);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(53, 20);
             this.lblEmail.TabIndex = 1;
@@ -68,8 +65,7 @@
             // 
             this.lblLösenord.AutoSize = true;
             this.lblLösenord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLösenord.Location = new System.Drawing.Point(80, 155);
-            this.lblLösenord.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLösenord.Location = new System.Drawing.Point(60, 126);
             this.lblLösenord.Name = "lblLösenord";
             this.lblLösenord.Size = new System.Drawing.Size(84, 20);
             this.lblLösenord.TabIndex = 1;
@@ -77,10 +73,9 @@
             // 
             // cmdLogIn
             // 
-            this.cmdLogIn.Location = new System.Drawing.Point(279, 219);
-            this.cmdLogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdLogIn.Location = new System.Drawing.Point(209, 178);
             this.cmdLogIn.Name = "cmdLogIn";
-            this.cmdLogIn.Size = new System.Drawing.Size(156, 43);
+            this.cmdLogIn.Size = new System.Drawing.Size(117, 35);
             this.cmdLogIn.TabIndex = 3;
             this.cmdLogIn.Text = "Logga in";
             this.cmdLogIn.UseVisualStyleBackColor = true;
@@ -88,16 +83,15 @@
             // 
             // ucLogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.lblLösenord);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtEmail);
             this.Name = "ucLogIn";
-            this.Size = new System.Drawing.Size(725, 351);
+            this.Size = new System.Drawing.Size(544, 285);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,8 +99,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblLösenord;
         private System.Windows.Forms.Button cmdLogIn;
