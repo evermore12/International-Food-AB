@@ -12,6 +12,8 @@ namespace InternationalFoodAB
 {
     public partial class frmMainForm : Form
     {
+
+        public bool IsLoggedIn { get; set; }
         public frmMainForm()
         {
             InitializeComponent();
@@ -24,15 +26,6 @@ namespace InternationalFoodAB
             this.Controls.Add(logInContron);
             logInContron.Show();
             logInContron.BringToFront();
-        }
-
-        private void SearchRecipe()
-        {
-            string searchWord = txtSearchWord.Text;
-            if(.Text.ToLower().Contains(searchWord) && .Text.ToLower().Contains("Lax"))
-            {
-
-            }
         }
     }
 }
