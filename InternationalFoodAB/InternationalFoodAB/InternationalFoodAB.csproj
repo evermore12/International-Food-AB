@@ -79,9 +79,6 @@
     <Compile Include="ucLogIn.Designer.cs">
       <DependentUpon>ucLogIn.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmAddRecipe.resx">
       <DependentUpon>frmAddRecipe.cs</DependentUpon>
     </EmbeddedResource>
