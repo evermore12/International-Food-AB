@@ -94,6 +94,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Classes\Accounts.txt" />
     <Content Include="Classes\ErrorLog.txt" />
     <Content Include="Programskiss.txt" />
     <None Include="Classes\Resources\salad.png" />
