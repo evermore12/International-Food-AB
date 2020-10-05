@@ -13,8 +13,8 @@ namespace InternationalFoodAB
     public partial class ucLogIn : UserControl
     {
 
-        public Form1 MainForm { get; set; }
-        public ucLogIn(Form1 mainForm)
+        public frmMainForm MainForm { get; set; }
+        public ucLogIn(frmMainForm mainForm)
         {
             InitializeComponent();
             MainForm = mainForm;
