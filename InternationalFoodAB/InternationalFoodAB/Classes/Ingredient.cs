@@ -17,6 +17,8 @@ namespace InternationalFoodAB
         {
             Name = name;
             Picture = picture;
+
+
         }
 
         public Ingredient(string name)

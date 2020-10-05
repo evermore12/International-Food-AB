@@ -20,10 +20,10 @@ namespace InternationalFoodAB
         }
 
         //Constructor med 2 parameter
-        public Account(string UserName, string Password)
+        public Account(string email, string password)
         {
-            this.UserName = UserName;
-            this.Password = Password;
+            this.Email = email;
+            this.Password = email;
         }
 
         //Constructor med 3 parameter
@@ -53,6 +53,14 @@ namespace InternationalFoodAB
                 //Messagebox visar att inloggningen är felaktig.
             }
         }
+
+        public bool CheckInlog()
+        {
+            if (Email == "admin@mail.se" && Password == "King123") return true;
+            else return false;
+
+        }
+
 
 
 
