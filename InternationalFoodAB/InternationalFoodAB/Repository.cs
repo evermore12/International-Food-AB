@@ -11,7 +11,6 @@ namespace InternationalFoodAB
     {
         public List<RecipeType> RecipeTypeList { get; set; }
 
-
         public Repository()
         {
             RecipeTypeList = new List<RecipeType> { new RecipeType("Kötträtter", InternationalFoodAB.Properties.Resources.Meat),

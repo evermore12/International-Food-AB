@@ -12,13 +12,11 @@ namespace InternationalFoodAB
         public string Name { get; set; }
         public Image Picture { get; set; }
 
-
         public Ingredient(string name, Image picture)
         {
             Name = name;
             Picture = picture;
         }
-
         public Ingredient(string name)
         {
             Name = name;
