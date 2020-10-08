@@ -25,7 +25,7 @@ namespace InternationalFoodAB
         public frmMainForm()
         {
             InitializeComponent();
-            cmdAddRecipe.Enabled = false;
+            cmdAddRecipe.Enabled = true; //true temporärt
             //grbRecipe.Left = this.Width - grbRecipe.Width / 2;
             //grbSearch.Left = this.Width - grbRecipe.Width / 2;
         }
