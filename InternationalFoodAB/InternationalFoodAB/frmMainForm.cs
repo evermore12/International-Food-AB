@@ -25,25 +25,29 @@ namespace InternationalFoodAB
         private void cmdLogIn_Click(object sender, EventArgs e)
         {
             //   Account account = new Account();
-            //  account.CheckInlog();
+            //  account.CheckInlog(); test
 
-
+           
             //Logga ut funktion
             if (IsLoggedIn)
             {
-                //    ucLogIn uclogin1 = new ucLogIn(this);
-                //   uclogin1.Hide();
+                ucLogIn uclogin1 = new ucLogIn(this);
+                 uclogin1.Show();
+                MessageBox.Show("Du har loggat ut");
                 IsLoggedIn = false;
                 lblAccount.Text = "Ej inloggad";
                 cmdLogIn.Text = "Logga in";
                 //      cmdLogIn_Click = CheckIn
                 //     lblAccount
             }
-
-            ucLogIn logInContron = new ucLogIn(this);
-            this.Controls.Add(logInContron);
-            logInContron.Show();
-            logInContron.BringToFront();
+            else
+            {
+                ucLogIn logInContron = new ucLogIn(this);
+                this.Controls.Add(logInContron);
+                logInContron.Show();
+                logInContron.BringToFront();
+            }    
+            
         }
 
         public void LoggedIn(string email)
