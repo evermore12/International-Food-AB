@@ -22,7 +22,9 @@ namespace InternationalFoodAB
         }
         private void cmdAddIngredient_Click(object sender, EventArgs e)
         {
-            lstIngredients.Items.Add(txtIngredientName.Text, txtIngredientAmount.Text);
+            string[] ingredientArray = { txtIngredientName.Text, txtIngredientAmount.Text };
+            ListViewItem ingredientItem = new ListViewItem(ingredientArray);
+            lstIngredients.Items.Add(ingredientItem);
             Ingredients.Add(new Ingredient(txtIngredientName.Text, txtIngredientAmount.Text));
             txtIngredientName.Text = ""; //Clear textbox
             txtIngredientAmount.Text = ""; //Clear textbox
