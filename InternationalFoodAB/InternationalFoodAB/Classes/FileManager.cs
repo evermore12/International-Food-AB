@@ -25,9 +25,7 @@ namespace InternationalFoodAB.Classes
             {
                 while ((row = reader.ReadLine()) != null)
                 {
-                    string[] splitText = row.Split(',');
-                    //Recipe recipe = new Recipe(splitText[0], splitText[1], splitText[2]);
-                    
+
                 }
             }
         }
