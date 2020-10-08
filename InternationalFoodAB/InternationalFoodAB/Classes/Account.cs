@@ -37,16 +37,18 @@ namespace InternationalFoodAB
         public void AdminLogin()
         {
             //alt2
-            string Username = "Admin";
+         /*   string Username = "Admin";
             string Password = "King123";
-            if (Username != "Admin" && Password != "King123")
+            string Email = "Admin1@gmail.com";
+
+           if (Username != "Admin" && Password != "King123" && Email != "Admin1@gmail.com")
             {
                 //Messagebox visar att inloggningen är felaktig.
-            }
+            } */
 
 
             //alt1
-            if (UserName != "Admin" && Password != "King123")
+            if (UserName != "Admin" && Password != "King123" && Email != "Admin1@gmail.com")
             {
                 //Messagebox visar att inloggningen är felaktig.
             }
@@ -54,7 +56,7 @@ namespace InternationalFoodAB
 
         public bool CheckInlog()
         {
-            if (Email == "admin@mail.se" && Password == "King123") return true;
+            if (Email == "admin@mail.se" && Password == "king123") return true;
             else return false;
 
         }
