@@ -21,5 +21,16 @@ namespace InternationalFoodAB
                                                     new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.Cake)};
         }
 
+        //public void SearchRecipe(string text, string category)
+        //{ 
+        //    if (Title.ToLower().Contains(text) || RecType.ToLower().Contains(category))
+        //    {
+
+        //    }
+        //    else
+        //    {
+
+        //    }
+        //}
     }
 }
