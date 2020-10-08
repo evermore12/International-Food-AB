@@ -39,8 +39,10 @@ namespace InternationalFoodAB
         {
             string kek = Environment.CurrentDirectory;
             string lol = AppDomain.CurrentDomain.BaseDirectory;
-            string mmm = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "@Classes/Resources/ErrorLog.txt");
-            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Data\Names.txt");
+            string mmm = Path.Combine(Path.GetDirectoryName(Environment.CurrentDirectory), @"Classes\Resources\ErrorLog.txt");
+            string path = Path.Combine(Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory), @"Data\Names.txt");
+            string path2 = AppDomain.CurrentDomain.BaseDirectory;
+            string path3 = path2.Substring(0, path.Length -5);
             FileManager.Write(path, "Hej", true);
         }
     }
