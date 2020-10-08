@@ -203,11 +203,11 @@
             // 
             // cmdAddRecipe
             // 
-            this.cmdAddRecipe.Location = new System.Drawing.Point(429, 28);
+            this.cmdAddRecipe.Location = new System.Drawing.Point(480, 28);
             this.cmdAddRecipe.Name = "cmdAddRecipe";
             this.cmdAddRecipe.Size = new System.Drawing.Size(108, 54);
             this.cmdAddRecipe.TabIndex = 4;
-            this.cmdAddRecipe.Text = "Lägg till ny recep";
+            this.cmdAddRecipe.Text = "Lägg till nytt recept";
             this.cmdAddRecipe.UseVisualStyleBackColor = true;
             // 
             // frmMainForm
