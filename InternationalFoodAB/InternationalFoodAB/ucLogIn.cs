@@ -40,9 +40,23 @@ namespace InternationalFoodAB
 
         }
 
+        internal static void Close()
+        {
+            throw new NotImplementedException();
+        }
+
         private void cmdClose_Click(object sender, EventArgs e)
         {
+         /*   if (MainForm.IsLoggedIn)
+            { 
+                this.Hide();
+            } */
             this.Hide();
+        }
+
+        private void ucLogIn_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

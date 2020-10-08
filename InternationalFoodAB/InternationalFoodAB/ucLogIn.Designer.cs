@@ -105,6 +105,7 @@
             this.Controls.Add(this.txtEmail);
             this.Name = "ucLogIn";
             this.Size = new System.Drawing.Size(544, 285);
+            this.Load += new System.EventHandler(this.ucLogIn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
