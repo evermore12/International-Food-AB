@@ -36,15 +36,6 @@ namespace InternationalFoodAB
 
         public void AdminLogin()
         {
-            //alt2
-         /*   string Username = "Admin";
-            string Password = "King123";
-            string Email = "Admin1@gmail.com";
-
-           if (Username != "Admin" && Password != "King123" && Email != "Admin1@gmail.com")
-            {
-                //Messagebox visar att inloggningen är felaktig.
-            } */
 
 
             //alt1

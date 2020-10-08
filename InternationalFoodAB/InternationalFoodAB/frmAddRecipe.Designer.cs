@@ -37,12 +37,13 @@
             this.lstIngredients = new System.Windows.Forms.ListBox();
             this.cmdAddIngredient = new System.Windows.Forms.Button();
             this.cmdAdd = new System.Windows.Forms.Button();
+            this.cboRecipeType = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtRecipeName
             // 
             this.txtRecipeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecipeName.Location = new System.Drawing.Point(232, 87);
+            this.txtRecipeName.Location = new System.Drawing.Point(237, 191);
             this.txtRecipeName.Name = "txtRecipeName";
             this.txtRecipeName.Size = new System.Drawing.Size(552, 44);
             this.txtRecipeName.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             this.lblRecipeName.AutoSize = true;
             this.lblRecipeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecipeName.Location = new System.Drawing.Point(425, 32);
+            this.lblRecipeName.Location = new System.Drawing.Point(430, 136);
             this.lblRecipeName.Name = "lblRecipeName";
             this.lblRecipeName.Size = new System.Drawing.Size(197, 37);
             this.lblRecipeName.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             this.lblRecipeDescription.AutoSize = true;
             this.lblRecipeDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecipeDescription.Location = new System.Drawing.Point(425, 153);
+            this.lblRecipeDescription.Location = new System.Drawing.Point(430, 257);
             this.lblRecipeDescription.Name = "lblRecipeDescription";
             this.lblRecipeDescription.Size = new System.Drawing.Size(181, 37);
             this.lblRecipeDescription.TabIndex = 1;
@@ -69,7 +70,7 @@
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(232, 205);
+            this.txtDescription.Location = new System.Drawing.Point(237, 309);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(552, 148);
             this.txtDescription.TabIndex = 2;
@@ -79,7 +80,7 @@
             // 
             this.lblIngredients.AutoSize = true;
             this.lblIngredients.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngredients.Location = new System.Drawing.Point(421, 372);
+            this.lblIngredients.Location = new System.Drawing.Point(426, 476);
             this.lblIngredients.Name = "lblIngredients";
             this.lblIngredients.Size = new System.Drawing.Size(193, 37);
             this.lblIngredients.TabIndex = 1;
@@ -87,7 +88,7 @@
             // 
             // txtIngredient
             // 
-            this.txtIngredient.Location = new System.Drawing.Point(466, 441);
+            this.txtIngredient.Location = new System.Drawing.Point(471, 530);
             this.txtIngredient.Name = "txtIngredient";
             this.txtIngredient.Size = new System.Drawing.Size(100, 20);
             this.txtIngredient.TabIndex = 5;
@@ -95,14 +96,14 @@
             // lstIngredients
             // 
             this.lstIngredients.FormattingEnabled = true;
-            this.lstIngredients.Location = new System.Drawing.Point(232, 511);
+            this.lstIngredients.Location = new System.Drawing.Point(237, 592);
             this.lstIngredients.Name = "lstIngredients";
             this.lstIngredients.Size = new System.Drawing.Size(552, 108);
             this.lstIngredients.TabIndex = 6;
             // 
             // cmdAddIngredient
             // 
-            this.cmdAddIngredient.Location = new System.Drawing.Point(445, 467);
+            this.cmdAddIngredient.Location = new System.Drawing.Point(451, 556);
             this.cmdAddIngredient.Name = "cmdAddIngredient";
             this.cmdAddIngredient.Size = new System.Drawing.Size(143, 23);
             this.cmdAddIngredient.TabIndex = 4;
@@ -112,7 +113,7 @@
             // 
             // cmdAdd
             // 
-            this.cmdAdd.Location = new System.Drawing.Point(911, 520);
+            this.cmdAdd.Location = new System.Drawing.Point(916, 624);
             this.cmdAdd.Name = "cmdAdd";
             this.cmdAdd.Size = new System.Drawing.Size(152, 76);
             this.cmdAdd.TabIndex = 7;
@@ -120,11 +121,20 @@
             this.cmdAdd.UseVisualStyleBackColor = true;
             this.cmdAdd.Click += new System.EventHandler(this.cmdAdd_Click);
             // 
+            // cboRecipeType
+            // 
+            this.cboRecipeType.FormattingEnabled = true;
+            this.cboRecipeType.Location = new System.Drawing.Point(429, 72);
+            this.cboRecipeType.Name = "cboRecipeType";
+            this.cboRecipeType.Size = new System.Drawing.Size(190, 21);
+            this.cboRecipeType.TabIndex = 8;
+            // 
             // frmAddRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 651);
+            this.ClientSize = new System.Drawing.Size(1244, 798);
+            this.Controls.Add(this.cboRecipeType);
             this.Controls.Add(this.cmdAdd);
             this.Controls.Add(this.lstIngredients);
             this.Controls.Add(this.txtIngredient);
@@ -152,5 +162,6 @@
         private System.Windows.Forms.ListBox lstIngredients;
         private System.Windows.Forms.Button cmdAddIngredient;
         private System.Windows.Forms.Button cmdAdd;
+        private System.Windows.Forms.ComboBox cboRecipeType;
     }
 }
