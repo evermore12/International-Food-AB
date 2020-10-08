@@ -14,7 +14,7 @@ namespace InternationalFoodAB
         public List<Ingredient> IngredientList { get; set; }
         public Recipe()
         {
-
+            
         }
     }
 }

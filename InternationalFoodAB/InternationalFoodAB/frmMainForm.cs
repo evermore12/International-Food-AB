@@ -15,7 +15,6 @@ namespace InternationalFoodAB
 {
     public partial class frmMainForm : Form
     {
-
         public bool IsLoggedIn { get; set; }
         public frmMainForm()
         {
@@ -25,13 +24,11 @@ namespace InternationalFoodAB
             cboSearchType.Items.Add("Titel");
             cboSearchType.Items.Add("Beskrivning");
         }
-
         private void cmdLogIn_Click(object sender, EventArgs e)
         {
             //   Account account = new Account();
             //  account.CheckInlog(); test
 
-           
             //Logga ut funktion
             if (IsLoggedIn)
             {

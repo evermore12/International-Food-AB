@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtRe = new System.Windows.Forms.TextBox();
+            this.txtRecipe = new System.Windows.Forms.TextBox();
             this.lblRecipeName = new System.Windows.Forms.Label();
             this.lblRecipeDescription = new System.Windows.Forms.Label();
-            this.txtDec = new System.Windows.Forms.RichTextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.txtDescription = new System.Windows.Forms.RichTextBox();
             this.lblIngredients = new System.Windows.Forms.Label();
             this.cmdAddIngredient = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIngredient = new System.Windows.Forms.TextBox();
+            this.lstIngredients = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // txtRe
+            // txtRecipe
             // 
-            this.txtRe.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRe.Location = new System.Drawing.Point(232, 87);
-            this.txtRe.Name = "txtRe";
-            this.txtRe.Size = new System.Drawing.Size(552, 44);
-            this.txtRe.TabIndex = 0;
+            this.txtRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecipe.Location = new System.Drawing.Point(232, 87);
+            this.txtRecipe.Name = "txtRecipe";
+            this.txtRecipe.Size = new System.Drawing.Size(552, 44);
+            this.txtRecipe.TabIndex = 0;
             // 
             // lblRecipeName
             // 
@@ -66,22 +66,13 @@
             this.lblRecipeDescription.TabIndex = 1;
             this.lblRecipeDescription.Text = "Beskrivning";
             // 
-            // txtDec
+            // txtDescription
             // 
-            this.txtDec.Location = new System.Drawing.Point(232, 205);
-            this.txtDec.Name = "txtDec";
-            this.txtDec.Size = new System.Drawing.Size(552, 148);
-            this.txtDec.TabIndex = 2;
-            this.txtDec.Text = "";
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(232, 496);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(552, 97);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.txtDescription.Location = new System.Drawing.Point(232, 205);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(552, 148);
+            this.txtDescription.TabIndex = 2;
+            this.txtDescription.Text = "";
             // 
             // lblIngredients
             // 
@@ -103,28 +94,37 @@
             this.cmdAddIngredient.UseVisualStyleBackColor = true;
             this.cmdAddIngredient.Click += new System.EventHandler(this.cmdAddIngredient_Click);
             // 
-            // textBox1
+            // txtIngredient
             // 
-            this.textBox1.Location = new System.Drawing.Point(466, 426);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtIngredient.Location = new System.Drawing.Point(466, 441);
+            this.txtIngredient.Name = "txtIngredient";
+            this.txtIngredient.Size = new System.Drawing.Size(100, 20);
+            this.txtIngredient.TabIndex = 5;
+            // 
+            // lstIngredients
+            // 
+            this.lstIngredients.FormattingEnabled = true;
+            this.lstIngredients.Location = new System.Drawing.Point(232, 504);
+            this.lstIngredients.Name = "lstIngredients";
+            this.lstIngredients.Size = new System.Drawing.Size(552, 108);
+            this.lstIngredients.TabIndex = 6;
             // 
             // frmAddRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 651);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lstIngredients);
+            this.Controls.Add(this.txtIngredient);
             this.Controls.Add(this.cmdAddIngredient);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.txtDec);
+            this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.lblIngredients);
             this.Controls.Add(this.lblRecipeDescription);
             this.Controls.Add(this.lblRecipeName);
-            this.Controls.Add(this.txtRe);
+            this.Controls.Add(this.txtRecipe);
             this.Name = "frmAddRecipe";
             this.Text = "frmAddRecipe";
+            this.Load += new System.EventHandler(this.frmAddRecipe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,13 +132,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtRe;
+        private System.Windows.Forms.TextBox txtRecipe;
         private System.Windows.Forms.Label lblRecipeName;
         private System.Windows.Forms.Label lblRecipeDescription;
-        private System.Windows.Forms.RichTextBox txtDec;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.RichTextBox txtDescription;
         private System.Windows.Forms.Label lblIngredients;
         private System.Windows.Forms.Button cmdAddIngredient;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIngredient;
+        private System.Windows.Forms.ListBox lstIngredients;
     }
 }

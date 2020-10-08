@@ -17,10 +17,16 @@ namespace InternationalFoodAB
         {
             InitializeComponent();
         }
-
+        private void frmAddRecipe_Load(object sender, EventArgs e)
+        {
+            NewRecipe = new Recipe();
+            NewRecipe.IngredientList = new List<Ingredient>();
+        }
         private void cmdAddIngredient_Click(object sender, EventArgs e)
         {
-
+            lstIngredients.Items.Add(txtIngredient.Text);
         }
+
+
     }
 }
