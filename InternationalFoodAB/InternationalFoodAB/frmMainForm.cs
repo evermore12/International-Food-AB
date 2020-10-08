@@ -44,6 +44,7 @@ namespace InternationalFoodAB
                 IsLoggedIn = false;
                 lblAccount.Text = "Ej inloggad";
                 cmdLogIn.Text = "Logga in";
+                cmdAddRecipe.Enabled = false; //Kan ine lägga till recept
                 //      cmdLogIn_Click = CheckIn
                 //     lblAccount
             }
@@ -59,7 +60,9 @@ namespace InternationalFoodAB
         {
             cmdLogIn.Text = "Logga ut";
             lblAccount.Text = "Inloggad som: " + email;
+            cmdAddRecipe.Enabled = true; //Kan lägga till recept
         }
+
         private void cmdAddRecipe_Click(object sender, EventArgs e)
         {
             frmAddRecipe frmAddRecipe = new frmAddRecipe();
