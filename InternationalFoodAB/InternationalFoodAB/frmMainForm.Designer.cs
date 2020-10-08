@@ -183,12 +183,12 @@
             // clnType
             // 
             this.clnType.Text = "Typ";
-            this.clnType.Width = 271;
+            this.clnType.Width = 204;
             // 
             // clnTitle
             // 
             this.clnTitle.Text = "Titel";
-            this.clnTitle.Width = 338;
+            this.clnTitle.Width = 293;
             // 
             // cmdLogIn
             // 
@@ -237,7 +237,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button cmdSearch;
         private System.Windows.Forms.TextBox txtSearchWord;
         public System.Windows.Forms.PictureBox picCake;
         public System.Windows.Forms.PictureBox picFish;
@@ -248,9 +247,10 @@
         private System.Windows.Forms.ColumnHeader clnType;
         private System.Windows.Forms.ColumnHeader clnTitle;
         public System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button cmdLogIn;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.ComboBox cboSearchType;
+        public System.Windows.Forms.Button cmdSearch;
+        public System.Windows.Forms.Button cmdLogIn;
     }
 }
 
