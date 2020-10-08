@@ -46,7 +46,8 @@ namespace InternationalFoodAB.Classes
             {
                 string[] recipeArray = recipeString.Split(';');
                 Recipe recipe = new Recipe();
-                recipe.Type = new RecipeType("");
+                recipe.Type = new RecipeType();
+                recipe.Ingredients = new List<Ingredient>();
 
                 recipe.Type.Name = recipeArray[0];
                 recipe.Name = recipeArray[1];

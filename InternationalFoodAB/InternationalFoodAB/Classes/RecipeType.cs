@@ -20,6 +20,10 @@ namespace InternationalFoodAB
             Name = name;
             Picture = picture;
         }
+        public RecipeType()
+        {
+
+        }
 
     }
 }
