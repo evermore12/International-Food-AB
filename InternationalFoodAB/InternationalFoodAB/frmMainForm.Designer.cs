@@ -42,6 +42,7 @@
             this.clnTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmdLogIn = new System.Windows.Forms.Button();
             this.lblAccount = new System.Windows.Forms.Label();
+            this.cmdAddRecipe = new System.Windows.Forms.Button();
             this.grbSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSoup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSalad)).BeginInit();
@@ -200,11 +201,21 @@
             this.lblAccount.TabIndex = 3;
             this.lblAccount.Text = "Ej inloggad";
             // 
+            // cmdAddRecipe
+            // 
+            this.cmdAddRecipe.Location = new System.Drawing.Point(429, 28);
+            this.cmdAddRecipe.Name = "cmdAddRecipe";
+            this.cmdAddRecipe.Size = new System.Drawing.Size(108, 54);
+            this.cmdAddRecipe.TabIndex = 4;
+            this.cmdAddRecipe.Text = "Lägg till ny recep";
+            this.cmdAddRecipe.UseVisualStyleBackColor = true;
+            // 
             // frmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 635);
+            this.Controls.Add(this.cmdAddRecipe);
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.grbRecipe);
@@ -240,6 +251,7 @@
         private System.Windows.Forms.Label lblAccount;
         public System.Windows.Forms.Button cmdSearch;
         public System.Windows.Forms.Button cmdLogIn;
+        public System.Windows.Forms.Button cmdAddRecipe;
     }
 }
 
