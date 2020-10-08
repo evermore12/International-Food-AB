@@ -32,10 +32,11 @@ namespace InternationalFoodAB
             if(txtRecipeName.Text.Length < 1 || txtDescription.Text.Length < 1  || lstIngredients.Items.Count < 1) //Vet inte om det är bättre att ha ex. txtRecipeName.Text == ""
             {
                 MessageBox.Show("En eller fler fält är tomma");
+                //(RecipeType)Repository.GetRecipeTypes().Where(x => x.Name == cboRecipeType.SelectedItem.ToString()).FirstOrDefault()
             }
             else
             {
-                Recipe recipe = new Recipe(txtRecipeName.Text, txtDescription.Text, (RecipeType)Repository.GetRecipeTypes().Where(x => x.Name == cboRecipeType.SelectedItem.ToString()).FirstOrDefault(), Ingredients);
+                Recipe recipe = new Recipe(txtRecipeName.Text, txtDescription.Text, new RecipeType(cboRecipeType.SelectedItem.ToString()), Ingredients);
                 MessageBox.Show("Recept " + recipe.Name + " tillagt");
 
                 txtRecipeName.Text = "";
