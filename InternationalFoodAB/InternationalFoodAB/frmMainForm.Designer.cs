@@ -176,7 +176,7 @@
             // 
             // clnType
             // 
-            this.clnType.Text = "Type";
+            this.clnType.Text = "Typ";
             this.clnType.Width = 271;
             // 
             // clnTitle
