@@ -34,6 +34,11 @@ namespace InternationalFoodAB.Classes
             return rows;
         }
 
+        public List<Recipe> SearchRecipe(string text, List<string> categories)
+        {
+
+        }
+
         //Villkor för sökfunktion som finns på "frmMainForm"
         //public void SearchRecipe(string text, string category)
         //{
