@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.picSoup = new System.Windows.Forms.PictureBox();
             this.picSalad = new System.Windows.Forms.PictureBox();
             this.picMeat = new System.Windows.Forms.PictureBox();
@@ -44,7 +45,6 @@
             this.cmdLogIn = new System.Windows.Forms.Button();
             this.lblAccount = new System.Windows.Forms.Label();
             this.cmdTest = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSoup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSalad)).BeginInit();
@@ -71,6 +71,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sök efter recept";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(20, 36);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 8;
             // 
             // picSoup
             // 
@@ -213,14 +221,6 @@
             this.cmdTest.Text = "Test";
             this.cmdTest.UseVisualStyleBackColor = true;
             this.cmdTest.Click += new System.EventHandler(this.cmdTest_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(20, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 8;
             // 
             // frmMainForm
             // 
