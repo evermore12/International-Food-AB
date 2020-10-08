@@ -23,13 +23,17 @@ namespace InternationalFoodAB
 
         //public void SearchRecipe(string text, string category)
         //{ 
-        //    if (Title.ToLower().Contains(text) || RecType.ToLower().Contains(category))
+        //    if (cboSearchType == "Typ" && RecipeType.ToLower().Contains(text))
         //    {
-
+        //Add the result here
         //    }
-        //    else
+        //    else if (cboSearchType == "Titel" && RecipeTitle.ToLower().Contains(text))
         //    {
-
+        //Add the result here
+        //    }
+        //    else if (cboSearchType == "Beskrivning" && RecipeDescription.ToLower().Contains(text))
+        //    {
+        //Add the result here
         //    }
         //}
     }

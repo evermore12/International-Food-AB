@@ -20,6 +20,10 @@ namespace InternationalFoodAB
         public frmMainForm()
         {
             InitializeComponent();
+
+            cboSearchType.Items.Add("Typ");
+            cboSearchType.Items.Add("Titel");
+            cboSearchType.Items.Add("Beskrivning");
         }
 
         private void cmdLogIn_Click(object sender, EventArgs e)

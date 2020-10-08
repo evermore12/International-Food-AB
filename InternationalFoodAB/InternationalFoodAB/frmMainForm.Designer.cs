@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboSearchType = new System.Windows.Forms.ComboBox();
             this.picSoup = new System.Windows.Forms.PictureBox();
             this.picSalad = new System.Windows.Forms.PictureBox();
             this.picMeat = new System.Windows.Forms.PictureBox();
@@ -55,7 +55,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cboSearchType);
             this.groupBox1.Controls.Add(this.picSoup);
             this.groupBox1.Controls.Add(this.picSalad);
             this.groupBox1.Controls.Add(this.picMeat);
@@ -71,13 +71,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sök efter recept";
             // 
-            // comboBox1
+            // cboSearchType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(20, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 8;
+            this.cboSearchType.FormattingEnabled = true;
+            this.cboSearchType.Location = new System.Drawing.Point(20, 36);
+            this.cboSearchType.Name = "cboSearchType";
+            this.cboSearchType.Size = new System.Drawing.Size(121, 24);
+            this.cboSearchType.TabIndex = 8;
             // 
             // picSoup
             // 
@@ -252,7 +252,7 @@
         public System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button cmdLogIn;
         private System.Windows.Forms.Label lblAccount;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboSearchType;
     }
 }
 
