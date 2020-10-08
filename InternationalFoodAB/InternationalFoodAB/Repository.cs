@@ -24,15 +24,15 @@ namespace InternationalFoodAB
         //{
         //    if (cboSearchType == "Typ" && RecipeType.ToLower().Contains(text))
         //    {
-                //Add the result here
+
         //    }
         //    else if (cboSearchType == "Titel" && RecipeTitle.ToLower().Contains(text))
         //    {
-                //Add the result here
+
         //    }
         //    else if (cboSearchType == "Beskrivning" && RecipeDescription.ToLower().Contains(text))
         //    {
-                //Add the result here
+
         //    }
         //}
     }

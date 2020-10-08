@@ -41,7 +41,6 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.clnType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clnTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clnDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmdLogIn = new System.Windows.Forms.Button();
             this.lblAccount = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -166,8 +165,7 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clnType,
-            this.clnTitle,
-            this.clnDescription});
+            this.clnTitle});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(27, 35);
             this.listView1.Name = "listView1";
@@ -179,17 +177,12 @@
             // clnType
             // 
             this.clnType.Text = "Type";
-            this.clnType.Width = 160;
+            this.clnType.Width = 271;
             // 
             // clnTitle
             // 
             this.clnTitle.Text = "Titel";
-            this.clnTitle.Width = 256;
-            // 
-            // clnDescription
-            // 
-            this.clnDescription.Text = "Beskrivning";
-            this.clnDescription.Width = 508;
+            this.clnTitle.Width = 338;
             // 
             // cmdLogIn
             // 
@@ -248,7 +241,6 @@
         private System.Windows.Forms.GroupBox grbRecipe;
         private System.Windows.Forms.ColumnHeader clnType;
         private System.Windows.Forms.ColumnHeader clnTitle;
-        private System.Windows.Forms.ColumnHeader clnDescription;
         public System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button cmdLogIn;
         private System.Windows.Forms.Label lblAccount;
