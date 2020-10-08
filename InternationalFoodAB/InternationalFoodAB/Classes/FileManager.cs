@@ -35,7 +35,7 @@ namespace InternationalFoodAB.Classes
             return rows;
         }
 
-        public List<Recipe> SearchRecipe(string text, List<string> categories)
+        public static List<Recipe> GetRecipe(string text, List<string> categories)
         {
             List<Recipe> recipeList = new List<Recipe>();
             List<string> recipes = Read(txtRecipesPath);
@@ -52,7 +52,7 @@ namespace InternationalFoodAB.Classes
                 string[] ingredients = recipeArray[3].Split('|');
                 for (int i = 0; i < ingredients.Length; i++)
                 {
-
+                    ingredients[0]
                 }
 
             }
