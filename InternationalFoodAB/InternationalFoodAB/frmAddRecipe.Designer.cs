@@ -28,23 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtRecipe = new System.Windows.Forms.TextBox();
+            this.txtRecipeName = new System.Windows.Forms.TextBox();
             this.lblRecipeName = new System.Windows.Forms.Label();
             this.lblRecipeDescription = new System.Windows.Forms.Label();
             this.txtDescription = new System.Windows.Forms.RichTextBox();
             this.lblIngredients = new System.Windows.Forms.Label();
-            this.cmdAddIngredient = new System.Windows.Forms.Button();
             this.txtIngredient = new System.Windows.Forms.TextBox();
             this.lstIngredients = new System.Windows.Forms.ListBox();
+            this.cmdAddIngredient = new System.Windows.Forms.Button();
+            this.cmdAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtRecipe
+            // txtRecipeName
             // 
-            this.txtRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecipe.Location = new System.Drawing.Point(232, 87);
-            this.txtRecipe.Name = "txtRecipe";
-            this.txtRecipe.Size = new System.Drawing.Size(552, 44);
-            this.txtRecipe.TabIndex = 0;
+            this.txtRecipeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecipeName.Location = new System.Drawing.Point(232, 87);
+            this.txtRecipeName.Name = "txtRecipeName";
+            this.txtRecipeName.Size = new System.Drawing.Size(552, 44);
+            this.txtRecipeName.TabIndex = 0;
             // 
             // lblRecipeName
             // 
@@ -84,16 +85,6 @@
             this.lblIngredients.TabIndex = 1;
             this.lblIngredients.Text = "Ingredienser";
             // 
-            // cmdAddIngredient
-            // 
-            this.cmdAddIngredient.Location = new System.Drawing.Point(445, 467);
-            this.cmdAddIngredient.Name = "cmdAddIngredient";
-            this.cmdAddIngredient.Size = new System.Drawing.Size(143, 23);
-            this.cmdAddIngredient.TabIndex = 4;
-            this.cmdAddIngredient.Text = "Lägg till ingrediens";
-            this.cmdAddIngredient.UseVisualStyleBackColor = true;
-            this.cmdAddIngredient.Click += new System.EventHandler(this.cmdAddIngredient_Click);
-            // 
             // txtIngredient
             // 
             this.txtIngredient.Location = new System.Drawing.Point(466, 441);
@@ -109,11 +100,32 @@
             this.lstIngredients.Size = new System.Drawing.Size(552, 108);
             this.lstIngredients.TabIndex = 6;
             // 
+            // cmdAddIngredient
+            // 
+            this.cmdAddIngredient.Location = new System.Drawing.Point(445, 467);
+            this.cmdAddIngredient.Name = "cmdAddIngredient";
+            this.cmdAddIngredient.Size = new System.Drawing.Size(143, 23);
+            this.cmdAddIngredient.TabIndex = 4;
+            this.cmdAddIngredient.Text = "Lägg till ingrediens";
+            this.cmdAddIngredient.UseVisualStyleBackColor = true;
+            this.cmdAddIngredient.Click += new System.EventHandler(this.cmdAddIngredient_Click);
+            // 
+            // cmdAdd
+            // 
+            this.cmdAdd.Location = new System.Drawing.Point(911, 520);
+            this.cmdAdd.Name = "cmdAdd";
+            this.cmdAdd.Size = new System.Drawing.Size(152, 76);
+            this.cmdAdd.TabIndex = 7;
+            this.cmdAdd.Text = "Lägg till";
+            this.cmdAdd.UseVisualStyleBackColor = true;
+            this.cmdAdd.Click += new System.EventHandler(this.cmdAdd_Click);
+            // 
             // frmAddRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 651);
+            this.Controls.Add(this.cmdAdd);
             this.Controls.Add(this.lstIngredients);
             this.Controls.Add(this.txtIngredient);
             this.Controls.Add(this.cmdAddIngredient);
@@ -121,10 +133,9 @@
             this.Controls.Add(this.lblIngredients);
             this.Controls.Add(this.lblRecipeDescription);
             this.Controls.Add(this.lblRecipeName);
-            this.Controls.Add(this.txtRecipe);
+            this.Controls.Add(this.txtRecipeName);
             this.Name = "frmAddRecipe";
             this.Text = "frmAddRecipe";
-            this.Load += new System.EventHandler(this.frmAddRecipe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,13 +143,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtRecipe;
+        private System.Windows.Forms.TextBox txtRecipeName;
         private System.Windows.Forms.Label lblRecipeName;
         private System.Windows.Forms.Label lblRecipeDescription;
         private System.Windows.Forms.RichTextBox txtDescription;
         private System.Windows.Forms.Label lblIngredients;
-        private System.Windows.Forms.Button cmdAddIngredient;
         private System.Windows.Forms.TextBox txtIngredient;
         private System.Windows.Forms.ListBox lstIngredients;
+        private System.Windows.Forms.Button cmdAddIngredient;
+        private System.Windows.Forms.Button cmdAdd;
     }
 }

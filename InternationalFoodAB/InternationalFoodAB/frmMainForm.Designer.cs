@@ -43,6 +43,7 @@
             this.clnTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmdLogIn = new System.Windows.Forms.Button();
             this.lblAccount = new System.Windows.Forms.Label();
+            this.cmdAddRecipe = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSoup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSalad)).BeginInit();
@@ -186,7 +187,7 @@
             // 
             // cmdLogIn
             // 
-            this.cmdLogIn.Location = new System.Drawing.Point(604, 28);
+            this.cmdLogIn.Location = new System.Drawing.Point(452, 28);
             this.cmdLogIn.Name = "cmdLogIn";
             this.cmdLogIn.Size = new System.Drawing.Size(108, 54);
             this.cmdLogIn.TabIndex = 2;
@@ -204,11 +205,23 @@
             this.lblAccount.TabIndex = 3;
             this.lblAccount.Text = "Ej inloggad";
             // 
+            // cmdAddRecipe
+            // 
+            this.cmdAddRecipe.Enabled = false;
+            this.cmdAddRecipe.Location = new System.Drawing.Point(581, 28);
+            this.cmdAddRecipe.Name = "cmdAddRecipe";
+            this.cmdAddRecipe.Size = new System.Drawing.Size(108, 54);
+            this.cmdAddRecipe.TabIndex = 4;
+            this.cmdAddRecipe.Text = "Lägg till recept";
+            this.cmdAddRecipe.UseVisualStyleBackColor = true;
+            this.cmdAddRecipe.Click += new System.EventHandler(this.cmdAddRecipe_Click);
+            // 
             // frmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 635);
+            this.Controls.Add(this.cmdAddRecipe);
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.grbRecipe);
@@ -245,6 +258,7 @@
         private System.Windows.Forms.Button cmdLogIn;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.ComboBox cboSearchType;
+        private System.Windows.Forms.Button cmdAddRecipe;
     }
 }
 
