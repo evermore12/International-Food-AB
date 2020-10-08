@@ -119,13 +119,13 @@ namespace InternationalFoodAB
 
             //List<Recipe> searchResult = FileManager.SearchRecipe(searchText, categories);
 
-            foreach (Recipe recipe in searchResult)
-            {
+            //foreach (Recipe recipe in searchResult)
+            //{
 
-                string[] recipeArray = { recipe.Type.Name, recipe.Name };
+            //    string[] recipeArray = { recipe.Type.Name, recipe.Name };
 
-                ListViewItem listViewItem = new ListViewItem(recipeArray);
-            }
+            //    ListViewItem listViewItem = new ListViewItem(recipeArray);
+            //}
         }
     }
 }
