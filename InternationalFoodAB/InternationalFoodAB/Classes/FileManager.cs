@@ -44,9 +44,12 @@ namespace InternationalFoodAB.Classes
         //{
         //    foreach (Recipe r in recipes)
         //    {
-        //        if (r.Name.ToLower().Contains(text.ToLower()) || r.Type.ToLower().Contains(text.ToLower()))
+        //        if (r.Name.ToLower().Contains(text.ToLower()) || r.Type.Name.ToLower().Contains(text.ToLower()))
         //        {
+        //          string[] writeRecipe = {r.Type.Name, r.Name};
+        //          ListViewItem listViewItem = new ListViewItem(writeRecipe);
 
+        //          lsvAddressBook.Items.Add();
         //        }
         //    }
         //}
