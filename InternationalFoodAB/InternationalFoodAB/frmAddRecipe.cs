@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InternationalFoodAB.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,14 +34,14 @@ namespace InternationalFoodAB
             }
             else
             {
-                List<Ingredient> kek = 
-                Recipe recipe = new Recipe(txtRecipeName.Text, txtDescription.Text, (RecipeType)cboRecipeType.SelectedItem, Ingredients); //Inte helt klar, måste få ingridients från listbox till recept konstruktorn
+                Recipe recipe = new Recipe(txtRecipeName.Text, txtDescription.Text, (RecipeType)cboRecipeType.SelectedItem, Ingredients);
                 MessageBox.Show("Recept " + recipe.Name + " tillagt");
 
                 txtRecipeName.Text = "";
                 txtDescription.Text = "";
                 txtIngredient.Text = "";
                 lstIngredients.Items.Clear();
+                Ingredients.Clear();
             }
         }
     }

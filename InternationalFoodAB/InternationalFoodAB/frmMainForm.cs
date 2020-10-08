@@ -62,12 +62,6 @@ namespace InternationalFoodAB
             cmdAddRecipe.Enabled = true; //Kan lägga till recept
         }
 
-        private void cmdAddRecipe_Click(object sender, EventArgs e)
-        {
-            frmAddRecipe frmAddRecipe = new frmAddRecipe();
-            frmAddRecipe.Show();
-        }
-
         private void picCake_Click(object sender, EventArgs e)
         {
             CakeActive ^= true;
