@@ -18,6 +18,10 @@ namespace InternationalFoodAB
         {
             FileManager.Write(FileManager.txtRecipesPath, string.Format("{0};{1};{2}|{3}", name, description, type.Name, string.Join("|", ingredients))); //Eller direkt i frmAddReciipe?
         }
+        public Recipe()
+        {
+
+        }
         public void Add(Recipe recipe)
         {
             throw new NotImplementedException();
