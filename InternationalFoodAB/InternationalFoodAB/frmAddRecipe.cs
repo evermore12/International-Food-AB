@@ -12,15 +12,18 @@ namespace InternationalFoodAB
 {
     public partial class frmAddRecipe : Form
     {
+        public List<Ingredient> Ingredients { get; set; }
         public frmAddRecipe()
         {
             InitializeComponent();
-            cboRecipeType.Items.AddRange(Repository.GetRecipeTypes().ToArray()); 
+            cboRecipeType.Items.AddRange(Repository.GetRecipeTypes().ToArray());
+            Ingredients = new List<Ingredient>();
         }
         private void cmdAddIngredient_Click(object sender, EventArgs e)
         {
             lstIngredients.Items.Add(txtIngredient.Text);
             txtIngredient.Text = ""; //Clear textbox
+            Ingredients.Add(new Ingredient(txtIngredient.Text));
         }
         private void cmdAdd_Click(object sender, EventArgs e)
         {
@@ -30,7 +33,8 @@ namespace InternationalFoodAB
             }
             else
             {
-                Recipe recipe = new Recipe(txtRecipeName.Text, txtDescription.Text, (RecipeType)cboRecipeType.SelectedItem, new List<Ingredient>()); //Inte helt klar, måste få ingridients från listbox till recept konstruktorn
+                List<Ingredient> kek = 
+                Recipe recipe = new Recipe(txtRecipeName.Text, txtDescription.Text, (RecipeType)cboRecipeType.SelectedItem, Ingredients); //Inte helt klar, måste få ingridients från listbox till recept konstruktorn
                 MessageBox.Show("Recept " + recipe.Name + " tillagt");
 
                 txtRecipeName.Text = "";

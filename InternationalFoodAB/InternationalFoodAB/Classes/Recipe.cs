@@ -10,14 +10,14 @@ namespace InternationalFoodAB
 {
     public class Recipe
     {
-        //
+        private string txtFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf("bin\\Debug")), "Resources\\Recipes.txt"); //Fint
+        public RecipeType Type { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public RecipeType Type { get; set; }
-        public List<Ingredient> IngredientList { get; set; }
+        public List<Ingredient> Ingredients { get; set; }
         public Recipe(string name, string descption, RecipeType type, List<Ingredient> ingredients)
         {
-            
+            FileManager.Write()
         }
         public void Add(Recipe recipe)
         {
