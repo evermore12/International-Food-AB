@@ -36,6 +36,7 @@ namespace InternationalFoodAB.Classes
 
         public List<Recipe> SearchRecipe(string text, List<string> categories)
         {
+            List<string> recipes = Read(Path.Combine(basePath.Remove(basePath.IndexOf("bin\\Debug")), "Resources\\Recipes.txt"));
 
         }
 
