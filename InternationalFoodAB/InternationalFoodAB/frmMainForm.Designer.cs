@@ -62,7 +62,7 @@
             this.grbSearch.Controls.Add(this.cmdSearch);
             this.grbSearch.Controls.Add(this.txtSearchWord);
             this.grbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbSearch.Location = new System.Drawing.Point(131, 106);
+            this.grbSearch.Location = new System.Drawing.Point(115, 106);
             this.grbSearch.Name = "grbSearch";
             this.grbSearch.Size = new System.Drawing.Size(581, 144);
             this.grbSearch.TabIndex = 0;
@@ -131,9 +131,9 @@
             // 
             // cmdSearch
             // 
-            this.cmdSearch.Location = new System.Drawing.Point(404, 85);
+            this.cmdSearch.Location = new System.Drawing.Point(404, 88);
             this.cmdSearch.Name = "cmdSearch";
-            this.cmdSearch.Size = new System.Drawing.Size(154, 33);
+            this.cmdSearch.Size = new System.Drawing.Size(154, 40);
             this.cmdSearch.TabIndex = 2;
             this.cmdSearch.Text = "Sök efter recept";
             this.cmdSearch.UseVisualStyleBackColor = true;
@@ -151,7 +151,7 @@
             // 
             this.grbRecipe.Controls.Add(this.lstRecipes);
             this.grbRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbRecipe.Location = new System.Drawing.Point(131, 266);
+            this.grbRecipe.Location = new System.Drawing.Point(115, 266);
             this.grbRecipe.Name = "grbRecipe";
             this.grbRecipe.Size = new System.Drawing.Size(581, 303);
             this.grbRecipe.TabIndex = 1;
@@ -183,9 +183,10 @@
             // 
             // cmdLogIn
             // 
-            this.cmdLogIn.Location = new System.Drawing.Point(604, 28);
+            this.cmdLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLogIn.Location = new System.Drawing.Point(568, 28);
             this.cmdLogIn.Name = "cmdLogIn";
-            this.cmdLogIn.Size = new System.Drawing.Size(108, 54);
+            this.cmdLogIn.Size = new System.Drawing.Size(128, 54);
             this.cmdLogIn.TabIndex = 2;
             this.cmdLogIn.Text = "Logga in";
             this.cmdLogIn.UseVisualStyleBackColor = true;
@@ -194,18 +195,19 @@
             // lblAccount
             // 
             this.lblAccount.AutoSize = true;
-            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAccount.Location = new System.Drawing.Point(45, 28);
             this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(70, 13);
+            this.lblAccount.Size = new System.Drawing.Size(87, 16);
             this.lblAccount.TabIndex = 3;
             this.lblAccount.Text = "Ej inloggad";
             // 
             // cmdAddRecipe
             // 
-            this.cmdAddRecipe.Location = new System.Drawing.Point(480, 28);
+            this.cmdAddRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAddRecipe.Location = new System.Drawing.Point(408, 28);
             this.cmdAddRecipe.Name = "cmdAddRecipe";
-            this.cmdAddRecipe.Size = new System.Drawing.Size(108, 54);
+            this.cmdAddRecipe.Size = new System.Drawing.Size(132, 54);
             this.cmdAddRecipe.TabIndex = 4;
             this.cmdAddRecipe.Text = "Lägg till nytt recept";
             this.cmdAddRecipe.UseVisualStyleBackColor = true;
@@ -215,7 +217,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 606);
+            this.ClientSize = new System.Drawing.Size(804, 606);
             this.Controls.Add(this.cmdAddRecipe);
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.cmdLogIn);
