@@ -60,6 +60,7 @@ namespace InternationalFoodAB.Classes
                     Ingredient ingredient = new Ingredient(ingredientArray[0], ingredientArray[1]);
                     recipe.Ingredients.Add(ingredient);
                 }
+                recipeList.Add(recipe);
             }
 
             return recipeList;

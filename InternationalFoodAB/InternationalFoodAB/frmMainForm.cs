@@ -25,6 +25,7 @@ namespace InternationalFoodAB
         {
             InitializeComponent();
             cmdAddRecipe.Enabled = true; //true temporärt
+            Search();
             //grbRecipe.Left = this.Width - grbRecipe.Width / 2;
             //grbSearch.Left = this.Width - grbRecipe.Width / 2;
         }
@@ -103,13 +104,26 @@ namespace InternationalFoodAB
 
         private void cmdSearch_Click(object sender, EventArgs e)
         {
+            Search();
+
+        }
+
+        private void cmdAddRecipe_Click(object sender, EventArgs e)
+        {
+            frmAddRecipe frmAddRecipe = new frmAddRecipe();
+            frmAddRecipe.Show();
+        }
+
+        private void Search()
+        {
+            lstRecipes.Items.Clear();
             string searchText = txtSearchWord.Text;
 
-            RecipeType Cake = new RecipeType("Kötträtter", InternationalFoodAB.Properties.Resources.Meat);
+            RecipeType Cake = new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.Meat);
             RecipeType Fish = new RecipeType("Fiskrätter", InternationalFoodAB.Properties.Resources.Fish);
-            RecipeType Meat = new RecipeType("Sallader", InternationalFoodAB.Properties.Resources.Salad);
-            RecipeType Salad = new RecipeType("Soppor", InternationalFoodAB.Properties.Resources.Soup);
-            RecipeType Soup = new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.Cake);
+            RecipeType Meat = new RecipeType("Kötträtter", InternationalFoodAB.Properties.Resources.Salad);
+            RecipeType Salad = new RecipeType("Sallader", InternationalFoodAB.Properties.Resources.Soup);
+            RecipeType Soup = new RecipeType("Soppor", InternationalFoodAB.Properties.Resources.Cake);
 
 
 
@@ -119,24 +133,21 @@ namespace InternationalFoodAB
             if (MeatActive) categories.Add(Meat);
             if (SaladActive) categories.Add(Salad);
             if (SoupActive) categories.Add(Soup);
+            if (!CakeActive && !FishActive && !MeatActive && !SaladActive && !SoupActive)
+            {
+                categories.Add(Cake);
+                categories.Add(Fish);
+                categories.Add(Meat);
+                categories.Add(Salad);
+                categories.Add(Soup);
+            }
 
-            FileManager.SearchRecipe(txtSearchWord.Text, categories);
+            List<ListViewItem> searchResultList = FileManager.SearchRecipe(txtSearchWord.Text, categories);
 
-            //List<Recipe> searchResult = FileManager.SearchRecipe(searchText, categories);
-
-            //foreach (Recipe recipe in searchResult)
-            //{
-
-            //    string[] recipeArray = { recipe.Type.Name, recipe.Name };
-
-            //    ListViewItem listViewItem = new ListViewItem(recipeArray);
-            //}
-        }
-
-        private void cmdAddRecipe_Click(object sender, EventArgs e)
-        {
-            frmAddRecipe frmAddRecipe = new frmAddRecipe();
-            frmAddRecipe.Show();
+            foreach (ListViewItem listViewItem in searchResultList)
+            {
+                lstRecipes.Items.Add(listViewItem);
+            }
         }
     }
 }
