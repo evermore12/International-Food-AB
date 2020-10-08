@@ -22,7 +22,7 @@ namespace InternationalFoodAB
         }
 
         //public void SearchRecipe(string text, string category)
-        //{
+        //{ 
         //    if (Title.ToLower().Contains(text) || RecType.ToLower().Contains(category))
         //    {
 
