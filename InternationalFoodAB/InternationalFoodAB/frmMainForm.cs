@@ -26,9 +26,9 @@ namespace InternationalFoodAB
         {
             InitializeComponent();
 
-            cboSearchType.Items.Add("Typ");
-            cboSearchType.Items.Add("Titel");
-            cboSearchType.Items.Add("Beskrivning");
+            //grbRecipe.Left = this.Width - grbRecipe.Width / 2;
+            //grbSearch.Left = this.Width - grbRecipe.Width / 2;
+
         }
         private void cmdLogIn_Click(object sender, EventArgs e)
         {
