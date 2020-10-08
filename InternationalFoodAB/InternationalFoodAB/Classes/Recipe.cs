@@ -14,9 +14,9 @@ namespace InternationalFoodAB
         public string Name { get; set; }
         public string Description { get; set; }
         public List<Ingredient> Ingredients { get; set; }
-        public Recipe(string name, string descption, RecipeType type, List<Ingredient> ingredients)
+        public Recipe(string name, string description, RecipeType type, List<Ingredient> ingredients)
         {
-            FileManager.Write()
+            FileManager.Write(FileManager.txtRecipesPath, string.Format("{0};{1};{2}|{3}", name, description, type.Name, string.Join("|", ingredients))); //Eller direkt i frmAddReciipe?
         }
         public Recipe()
         {
