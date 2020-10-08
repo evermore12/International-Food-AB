@@ -146,6 +146,7 @@
             this.cmdSearch.TabIndex = 2;
             this.cmdSearch.Text = "Sök efter recept";
             this.cmdSearch.UseVisualStyleBackColor = true;
+            this.cmdSearch.Click += new System.EventHandler(this.cmdSearch_Click);
             // 
             // txtSearchWord
             // 

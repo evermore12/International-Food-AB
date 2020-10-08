@@ -105,5 +105,15 @@ namespace InternationalFoodAB
             if (SoupActive) picSoup.Image = InternationalFoodAB.Properties.Resources.SoupActive;
             else picSoup.Image = InternationalFoodAB.Properties.Resources.Soup;
         }
+
+        private void cmdSearch_Click(object sender, EventArgs e)
+        {
+            List<string> Categories = new List<string>();
+            if (CakeActive) Categories.Add("Cake");
+            if (FishActive) Categories.Add("Cake");
+            if (MeatActive) Categories.Add("Cake");
+            if (SaladActive) Categories.Add("Cake");
+            if (SoupActive) Categories.Add("Cake");
+        }
     }
 }
