@@ -62,7 +62,7 @@
             this.grbSearch.Controls.Add(this.cmdSearch);
             this.grbSearch.Controls.Add(this.txtSearchWord);
             this.grbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbSearch.Location = new System.Drawing.Point(131, 432);
+            this.grbSearch.Location = new System.Drawing.Point(131, 106);
             this.grbSearch.Name = "grbSearch";
             this.grbSearch.Size = new System.Drawing.Size(581, 144);
             this.grbSearch.TabIndex = 0;
@@ -151,7 +151,7 @@
             // 
             this.grbRecipe.Controls.Add(this.lstRecipes);
             this.grbRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbRecipe.Location = new System.Drawing.Point(131, 108);
+            this.grbRecipe.Location = new System.Drawing.Point(131, 266);
             this.grbRecipe.Name = "grbRecipe";
             this.grbRecipe.Size = new System.Drawing.Size(581, 303);
             this.grbRecipe.TabIndex = 1;
@@ -215,7 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 635);
+            this.ClientSize = new System.Drawing.Size(813, 606);
             this.Controls.Add(this.cmdAddRecipe);
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.cmdLogIn);

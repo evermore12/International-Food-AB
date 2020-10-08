@@ -26,6 +26,7 @@ namespace InternationalFoodAB
             ListViewItem ingredientItem = new ListViewItem(ingredientArray);
             lstIngredients.Items.Add(ingredientItem);
             Ingredients.Add(new Ingredient(txtIngredientName.Text, txtIngredientAmount.Text));
+
             txtIngredientName.Text = ""; //Clear textbox
             txtIngredientAmount.Text = ""; //Clear textbox
         }
@@ -34,7 +35,6 @@ namespace InternationalFoodAB
             if(txtRecipeName.Text.Length < 1 || txtDescription.Text.Length < 1  || lstIngredients.Items.Count < 1) //Vet inte om det är bättre att ha ex. txtRecipeName.Text == ""
             {
                 MessageBox.Show("En eller fler fält är tomma");
-                //(RecipeType)Repository.GetRecipeTypes().Where(x => x.Name == cboRecipeType.SelectedItem.ToString()).FirstOrDefault()
             }
             else
             {

@@ -12,6 +12,7 @@ namespace InternationalFoodAB.Classes
     public static class FileManager
     {
         public static string txtRecipesPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf("bin\\Debug")), "Resources\\Recipes.txt");
+
         /// <summary>
         /// Append is true by default
         /// </summary>

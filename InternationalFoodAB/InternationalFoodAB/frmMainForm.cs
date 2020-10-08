@@ -20,7 +20,6 @@ namespace InternationalFoodAB
         public bool MeatActive { get; set; }
         public bool SaladActive { get; set; }
         public bool SoupActive { get; set; }
-
         public bool IsLoggedIn { get; set; }
         public frmMainForm()
         {
