@@ -211,6 +211,7 @@
             this.lblAccount.Size = new System.Drawing.Size(70, 13);
             this.lblAccount.TabIndex = 3;
             this.lblAccount.Text = "Ej inloggad";
+            this.lblAccount.Click += new System.EventHandler(this.lblAccount_Click);
             // 
             // cmdTest
             // 
