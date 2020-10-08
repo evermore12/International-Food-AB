@@ -25,7 +25,7 @@ namespace InternationalFoodAB
         private void cmdLogIn_Click(object sender, EventArgs e)
         {
             //   Account account = new Account();
-            //  account.CheckInlog();
+            //  account.CheckInlog(); test
 
 
             //Logga ut funktion
