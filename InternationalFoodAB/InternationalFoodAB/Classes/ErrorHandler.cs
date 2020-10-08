@@ -12,7 +12,7 @@ namespace InternationalFoodAB.Classes
         public static void Log(Exception error)
         {
             string text = string.Format("Message: {0}, Type: {1}", error.Message, error.GetType().ToString());
-            FileManager.Write("Path", text, true);
+            FileManager.Write(InternationalFoodAB.Properties.Resources.ErrorLog, text, true);
         }
     }
 }
