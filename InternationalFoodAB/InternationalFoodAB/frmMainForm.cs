@@ -117,7 +117,7 @@ namespace InternationalFoodAB
             if (SaladActive) categories.Add("Cake");
             if (SoupActive) categories.Add("Cake");
 
-            List<Recipe> searchResult = FileManager.SearchRecipe(searchText, categories);
+            //List<Recipe> searchResult = FileManager.SearchRecipe(searchText, categories);
 
             foreach (Recipe recipe in searchResult)
             {
