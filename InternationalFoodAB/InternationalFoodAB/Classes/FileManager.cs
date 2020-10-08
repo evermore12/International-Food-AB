@@ -35,7 +35,7 @@ namespace InternationalFoodAB.Classes
             return rows;
         }
 
-        public static List<Recipe> GetRecipe(string text, List<string> categories)
+        public static List<Recipe> GetRecipes(string text, List<string> categories)
         {
             List<Recipe> recipeList = new List<Recipe>();
             List<string> recipes = Read(txtRecipesPath);
