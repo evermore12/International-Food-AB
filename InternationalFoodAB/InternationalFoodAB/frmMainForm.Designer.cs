@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cboSearchType = new System.Windows.Forms.ComboBox();
+            this.grbSearch = new System.Windows.Forms.GroupBox();
             this.picSoup = new System.Windows.Forms.PictureBox();
             this.picSalad = new System.Windows.Forms.PictureBox();
             this.picMeat = new System.Windows.Forms.PictureBox();
@@ -43,7 +42,7 @@
             this.clnTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmdLogIn = new System.Windows.Forms.Button();
             this.lblAccount = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.grbSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSoup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMeat)).BeginInit();
@@ -52,37 +51,28 @@
             this.grbRecipe.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // grbSearch
             // 
-            this.groupBox1.Controls.Add(this.cboSearchType);
-            this.groupBox1.Controls.Add(this.picSoup);
-            this.groupBox1.Controls.Add(this.picSalad);
-            this.groupBox1.Controls.Add(this.picMeat);
-            this.groupBox1.Controls.Add(this.picFish);
-            this.groupBox1.Controls.Add(this.picCake);
-            this.groupBox1.Controls.Add(this.cmdSearch);
-            this.groupBox1.Controls.Add(this.txtSearchWord);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(155, 431);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(557, 172);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sök efter recept";
-            // 
-            // cboSearchType
-            // 
-            this.cboSearchType.FormattingEnabled = true;
-            this.cboSearchType.Location = new System.Drawing.Point(20, 36);
-            this.cboSearchType.Name = "cboSearchType";
-            this.cboSearchType.Size = new System.Drawing.Size(121, 24);
-            this.cboSearchType.TabIndex = 8;
+            this.grbSearch.Controls.Add(this.picSoup);
+            this.grbSearch.Controls.Add(this.picSalad);
+            this.grbSearch.Controls.Add(this.picMeat);
+            this.grbSearch.Controls.Add(this.picFish);
+            this.grbSearch.Controls.Add(this.picCake);
+            this.grbSearch.Controls.Add(this.cmdSearch);
+            this.grbSearch.Controls.Add(this.txtSearchWord);
+            this.grbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbSearch.Location = new System.Drawing.Point(131, 432);
+            this.grbSearch.Name = "grbSearch";
+            this.grbSearch.Size = new System.Drawing.Size(581, 144);
+            this.grbSearch.TabIndex = 0;
+            this.grbSearch.TabStop = false;
+            this.grbSearch.Text = "Sök efter recept";
             // 
             // picSoup
             // 
             this.picSoup.Image = global::InternationalFoodAB.Properties.Resources.Soup;
             this.picSoup.InitialImage = null;
-            this.picSoup.Location = new System.Drawing.Point(276, 104);
+            this.picSoup.Location = new System.Drawing.Point(325, 72);
             this.picSoup.Name = "picSoup";
             this.picSoup.Size = new System.Drawing.Size(56, 56);
             this.picSoup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -94,7 +84,7 @@
             // 
             this.picSalad.Image = global::InternationalFoodAB.Properties.Resources.Salad;
             this.picSalad.InitialImage = null;
-            this.picSalad.Location = new System.Drawing.Point(212, 105);
+            this.picSalad.Location = new System.Drawing.Point(251, 73);
             this.picSalad.Name = "picSalad";
             this.picSalad.Size = new System.Drawing.Size(56, 56);
             this.picSalad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -106,7 +96,7 @@
             // 
             this.picMeat.Image = global::InternationalFoodAB.Properties.Resources.Meat;
             this.picMeat.InitialImage = null;
-            this.picMeat.Location = new System.Drawing.Point(148, 105);
+            this.picMeat.Location = new System.Drawing.Point(177, 72);
             this.picMeat.Name = "picMeat";
             this.picMeat.Size = new System.Drawing.Size(56, 56);
             this.picMeat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,7 +108,7 @@
             // 
             this.picFish.Image = global::InternationalFoodAB.Properties.Resources.Fish;
             this.picFish.InitialImage = null;
-            this.picFish.Location = new System.Drawing.Point(84, 105);
+            this.picFish.Location = new System.Drawing.Point(103, 72);
             this.picFish.Name = "picFish";
             this.picFish.Size = new System.Drawing.Size(56, 56);
             this.picFish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,7 +120,7 @@
             // 
             this.picCake.Image = global::InternationalFoodAB.Properties.Resources.Cake;
             this.picCake.InitialImage = null;
-            this.picCake.Location = new System.Drawing.Point(20, 105);
+            this.picCake.Location = new System.Drawing.Point(29, 72);
             this.picCake.Name = "picCake";
             this.picCake.Size = new System.Drawing.Size(56, 56);
             this.picCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -140,7 +130,7 @@
             // 
             // cmdSearch
             // 
-            this.cmdSearch.Location = new System.Drawing.Point(367, 117);
+            this.cmdSearch.Location = new System.Drawing.Point(404, 85);
             this.cmdSearch.Name = "cmdSearch";
             this.cmdSearch.Size = new System.Drawing.Size(154, 33);
             this.cmdSearch.TabIndex = 2;
@@ -150,10 +140,10 @@
             // 
             // txtSearchWord
             // 
-            this.txtSearchWord.Location = new System.Drawing.Point(20, 72);
+            this.txtSearchWord.Location = new System.Drawing.Point(27, 35);
             this.txtSearchWord.Multiline = true;
             this.txtSearchWord.Name = "txtSearchWord";
-            this.txtSearchWord.Size = new System.Drawing.Size(501, 25);
+            this.txtSearchWord.Size = new System.Drawing.Size(531, 25);
             this.txtSearchWord.TabIndex = 1;
             // 
             // grbRecipe
@@ -218,11 +208,11 @@
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.grbRecipe);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grbSearch);
             this.Name = "frmMainForm";
             this.Text = "Recepter";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grbSearch.ResumeLayout(false);
+            this.grbSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSoup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMeat)).EndInit();
@@ -236,7 +226,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grbSearch;
         private System.Windows.Forms.TextBox txtSearchWord;
         public System.Windows.Forms.PictureBox picCake;
         public System.Windows.Forms.PictureBox picFish;
@@ -248,7 +238,6 @@
         private System.Windows.Forms.ColumnHeader clnTitle;
         public System.Windows.Forms.ListView lstRecipes;
         private System.Windows.Forms.Label lblAccount;
-        private System.Windows.Forms.ComboBox cboSearchType;
         public System.Windows.Forms.Button cmdSearch;
         public System.Windows.Forms.Button cmdLogIn;
     }
