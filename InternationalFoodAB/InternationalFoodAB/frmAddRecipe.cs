@@ -17,7 +17,7 @@ namespace InternationalFoodAB
         public frmAddRecipe()
         {
             InitializeComponent();
-            cboRecipeType.Items.AddRange(Repository.GetRecipeTypes().ToArray());
+            cboRecipeType.Items.AddRange(Repository.GetRecipeTypes().Select(x => x.Name).ToArray());
             Ingredients = new List<Ingredient>();
         }
         private void cmdAddIngredient_Click(object sender, EventArgs e)

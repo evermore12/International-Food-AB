@@ -16,8 +16,9 @@ namespace InternationalFoodAB
         public List<Ingredient> Ingredients { get; set; }
         public Recipe(string name, string description, RecipeType type, List<Ingredient> ingredients)
         {
+            //Eller direkt i frmAddRecipe?
             FileManager.Write(FileManager.txtRecipesPath, string.Format("{0};{1};{2}|{3}%{4}", name, description, type.Name, string.Join("|", ingredients.Select(x => x.Name)),
-                                                                        string.Join("%", ingredients.Select(x => x.Amount)))); //Eller direkt i frmAddRecipe?
+                                                                        string.Join("%", ingredients.Select(x => x.Amount)))); 
         }
         public Recipe()
         {
