@@ -43,76 +43,82 @@
             this.txtIngredientAmount = new System.Windows.Forms.TextBox();
             this.lblIngredientName = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
+            this.lblRecipeType = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtRecipeName
             // 
-            this.txtRecipeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRecipeName.Location = new System.Drawing.Point(237, 191);
+            this.txtRecipeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRecipeName.Location = new System.Drawing.Point(332, 90);
             this.txtRecipeName.Name = "txtRecipeName";
-            this.txtRecipeName.Size = new System.Drawing.Size(552, 44);
+            this.txtRecipeName.Size = new System.Drawing.Size(355, 38);
             this.txtRecipeName.TabIndex = 0;
             // 
             // lblRecipeName
             // 
             this.lblRecipeName.AutoSize = true;
-            this.lblRecipeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecipeName.Location = new System.Drawing.Point(430, 136);
+            this.lblRecipeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipeName.Location = new System.Drawing.Point(82, 93);
             this.lblRecipeName.Name = "lblRecipeName";
-            this.lblRecipeName.Size = new System.Drawing.Size(197, 37);
+            this.lblRecipeName.Size = new System.Drawing.Size(168, 31);
             this.lblRecipeName.TabIndex = 1;
             this.lblRecipeName.Text = "Receptnamn";
             // 
             // lblRecipeDescription
             // 
             this.lblRecipeDescription.AutoSize = true;
-            this.lblRecipeDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecipeDescription.Location = new System.Drawing.Point(430, 257);
+            this.lblRecipeDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipeDescription.Location = new System.Drawing.Point(82, 169);
             this.lblRecipeDescription.Name = "lblRecipeDescription";
-            this.lblRecipeDescription.Size = new System.Drawing.Size(181, 37);
+            this.lblRecipeDescription.Size = new System.Drawing.Size(155, 31);
             this.lblRecipeDescription.TabIndex = 1;
             this.lblRecipeDescription.Text = "Beskrivning";
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(237, 309);
+            this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescription.Location = new System.Drawing.Point(332, 169);
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(552, 148);
+            this.txtDescription.Size = new System.Drawing.Size(355, 148);
             this.txtDescription.TabIndex = 2;
             this.txtDescription.Text = "";
             // 
             // lblIngredients
             // 
             this.lblIngredients.AutoSize = true;
-            this.lblIngredients.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngredients.Location = new System.Drawing.Point(426, 476);
+            this.lblIngredients.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngredients.Location = new System.Drawing.Point(82, 347);
             this.lblIngredients.Name = "lblIngredients";
-            this.lblIngredients.Size = new System.Drawing.Size(193, 37);
+            this.lblIngredients.Size = new System.Drawing.Size(165, 31);
             this.lblIngredients.TabIndex = 1;
             this.lblIngredients.Text = "Ingredienser";
             // 
             // txtIngredientName
             // 
-            this.txtIngredientName.Location = new System.Drawing.Point(374, 537);
+            this.txtIngredientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngredientName.Location = new System.Drawing.Point(332, 347);
+            this.txtIngredientName.Multiline = true;
             this.txtIngredientName.Name = "txtIngredientName";
-            this.txtIngredientName.Size = new System.Drawing.Size(158, 20);
+            this.txtIngredientName.Size = new System.Drawing.Size(227, 44);
             this.txtIngredientName.TabIndex = 5;
             // 
             // cmdAddIngredient
             // 
-            this.cmdAddIngredient.Location = new System.Drawing.Point(449, 563);
+            this.cmdAddIngredient.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAddIngredient.Location = new System.Drawing.Point(332, 397);
             this.cmdAddIngredient.Name = "cmdAddIngredient";
-            this.cmdAddIngredient.Size = new System.Drawing.Size(143, 23);
+            this.cmdAddIngredient.Size = new System.Drawing.Size(227, 30);
             this.cmdAddIngredient.TabIndex = 4;
-            this.cmdAddIngredient.Text = "Lägg till ingrediens";
+            this.cmdAddIngredient.Text = "Lägg till ingrediens i listan nedan";
             this.cmdAddIngredient.UseVisualStyleBackColor = true;
             this.cmdAddIngredient.Click += new System.EventHandler(this.cmdAddIngredient_Click);
             // 
             // cmdAdd
             // 
-            this.cmdAdd.Location = new System.Drawing.Point(916, 624);
+            this.cmdAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAdd.Location = new System.Drawing.Point(535, 634);
             this.cmdAdd.Name = "cmdAdd";
-            this.cmdAdd.Size = new System.Drawing.Size(152, 76);
+            this.cmdAdd.Size = new System.Drawing.Size(152, 44);
             this.cmdAdd.TabIndex = 7;
             this.cmdAdd.Text = "Lägg till";
             this.cmdAdd.UseVisualStyleBackColor = true;
@@ -121,9 +127,9 @@
             // cboRecipeType
             // 
             this.cboRecipeType.FormattingEnabled = true;
-            this.cboRecipeType.Location = new System.Drawing.Point(429, 72);
+            this.cboRecipeType.Location = new System.Drawing.Point(332, 43);
             this.cboRecipeType.Name = "cboRecipeType";
-            this.cboRecipeType.Size = new System.Drawing.Size(190, 21);
+            this.cboRecipeType.Size = new System.Drawing.Size(186, 21);
             this.cboRecipeType.TabIndex = 8;
             // 
             // lstIngredients
@@ -131,10 +137,11 @@
             this.lstIngredients.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmIngredient,
             this.clmIngredientQuantity});
+            this.lstIngredients.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstIngredients.HideSelection = false;
-            this.lstIngredients.Location = new System.Drawing.Point(237, 597);
+            this.lstIngredients.Location = new System.Drawing.Point(89, 471);
             this.lstIngredients.Name = "lstIngredients";
-            this.lstIngredients.Size = new System.Drawing.Size(552, 148);
+            this.lstIngredients.Size = new System.Drawing.Size(598, 148);
             this.lstIngredients.TabIndex = 9;
             this.lstIngredients.UseCompatibleStateImageBehavior = false;
             this.lstIngredients.View = System.Windows.Forms.View.Details;
@@ -142,45 +149,58 @@
             // clmIngredient
             // 
             this.clmIngredient.Text = "Ingrediens";
-            this.clmIngredient.Width = 246;
+            this.clmIngredient.Width = 327;
             // 
             // clmIngredientQuantity
             // 
             this.clmIngredientQuantity.Text = "Mängd";
-            this.clmIngredientQuantity.Width = 135;
+            this.clmIngredientQuantity.Width = 228;
             // 
             // txtIngredientAmount
             // 
-            this.txtIngredientAmount.Location = new System.Drawing.Point(538, 537);
+            this.txtIngredientAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngredientAmount.Location = new System.Drawing.Point(576, 347);
+            this.txtIngredientAmount.Multiline = true;
             this.txtIngredientAmount.Name = "txtIngredientAmount";
-            this.txtIngredientAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtIngredientAmount.Size = new System.Drawing.Size(111, 44);
             this.txtIngredientAmount.TabIndex = 10;
             // 
             // lblIngredientName
             // 
             this.lblIngredientName.AutoSize = true;
-            this.lblIngredientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngredientName.Location = new System.Drawing.Point(395, 519);
+            this.lblIngredientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngredientName.Location = new System.Drawing.Point(329, 329);
             this.lblIngredientName.Name = "lblIngredientName";
-            this.lblIngredientName.Size = new System.Drawing.Size(120, 15);
+            this.lblIngredientName.Size = new System.Drawing.Size(129, 16);
             this.lblIngredientName.TabIndex = 11;
             this.lblIngredientName.Text = "Ingrediensens namn";
             // 
             // lblAmount
             // 
             this.lblAmount.AutoSize = true;
-            this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmount.Location = new System.Drawing.Point(558, 519);
+            this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmount.Location = new System.Drawing.Point(573, 329);
             this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(46, 15);
+            this.lblAmount.Size = new System.Drawing.Size(50, 16);
             this.lblAmount.TabIndex = 12;
             this.lblAmount.Text = "Mängd";
+            // 
+            // lblRecipeType
+            // 
+            this.lblRecipeType.AutoSize = true;
+            this.lblRecipeType.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipeType.Location = new System.Drawing.Point(82, 33);
+            this.lblRecipeType.Name = "lblRecipeType";
+            this.lblRecipeType.Size = new System.Drawing.Size(138, 31);
+            this.lblRecipeType.TabIndex = 13;
+            this.lblRecipeType.Text = "Recepttyp";
             // 
             // frmAddRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1186, 798);
+            this.ClientSize = new System.Drawing.Size(804, 731);
+            this.Controls.Add(this.lblRecipeType);
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.lblIngredientName);
             this.Controls.Add(this.txtIngredientAmount);
@@ -195,7 +215,7 @@
             this.Controls.Add(this.lblRecipeName);
             this.Controls.Add(this.txtRecipeName);
             this.Name = "frmAddRecipe";
-            this.Text = "frmAddRecipe";
+            this.Text = "Lägg till recept";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,5 +238,6 @@
         private System.Windows.Forms.TextBox txtIngredientAmount;
         private System.Windows.Forms.Label lblIngredientName;
         private System.Windows.Forms.Label lblAmount;
+        private System.Windows.Forms.Label lblRecipeType;
     }
 }
