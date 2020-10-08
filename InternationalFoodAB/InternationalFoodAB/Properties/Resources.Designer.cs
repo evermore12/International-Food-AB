@@ -71,7 +71,18 @@ namespace InternationalFoodAB.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  .
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap CakeActive {
+            get {
+                object obj = ResourceManager.GetObject("CakeActive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hej
+        ///.
         /// </summary>
         public static string ErrorLog {
             get {
@@ -92,9 +103,29 @@ namespace InternationalFoodAB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap FishActive {
+            get {
+                object obj = ResourceManager.GetObject("FishActive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Meat {
             get {
                 object obj = ResourceManager.GetObject("Meat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap MeatActive {
+            get {
+                object obj = ResourceManager.GetObject("MeatActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -112,9 +143,29 @@ namespace InternationalFoodAB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap SaladActive {
+            get {
+                object obj = ResourceManager.GetObject("SaladActive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Soup {
             get {
                 object obj = ResourceManager.GetObject("Soup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SoupActive {
+            get {
+                object obj = ResourceManager.GetObject("SoupActive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
