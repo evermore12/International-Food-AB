@@ -1,3 +1,1 @@
-﻿dsfds;fsddsfsdfdfs;Kötträtter|InternationalFoodAB.Ingredient
-God soppa;Riktigt god soppa med goda saker att ha i;Kötträtter;InternationalFoodAB.IngredientFiskrätter;Torsk i ugn;Lägg in han i ugnen|Torskfilé%500 kilo
-Kötträtter;Smaskig fläskkarré ;IN I UGNEN ME HAN|Fläskkarré|Grädde|Lök%1 kg%2 dl%2 st
+﻿Kötträtter;Smaskig fläskkarré ;IN I UGNEN ME HAN;Fläskkarré|Grädde|Lök%1 kg%2 dl%2 st

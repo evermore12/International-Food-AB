@@ -105,12 +105,22 @@ namespace InternationalFoodAB
         {
             string searchText = txtSearchWord.Text;
 
-            List<string> categories = new List<string>();
-            if (CakeActive) categories.Add("Cake");
-            if (FishActive) categories.Add("Cake");
-            if (MeatActive) categories.Add("Cake");
-            if (SaladActive) categories.Add("Cake");
-            if (SoupActive) categories.Add("Cake");
+            RecipeType Cake = new RecipeType("Kötträtter", InternationalFoodAB.Properties.Resources.Meat);
+            RecipeType Fish = new RecipeType("Fiskrätter", InternationalFoodAB.Properties.Resources.Fish);
+            RecipeType Meat = new RecipeType("Sallader", InternationalFoodAB.Properties.Resources.Salad);
+            RecipeType Salad = new RecipeType("Soppor", InternationalFoodAB.Properties.Resources.Soup);
+            RecipeType Soup = new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.Cake);
+
+
+
+            List<RecipeType> categories = new List<RecipeType>();
+            if (CakeActive) categories.Add(Cake);
+            if (FishActive) categories.Add(Fish);
+            if (MeatActive) categories.Add(Meat);
+            if (SaladActive) categories.Add(Salad);
+            if (SoupActive) categories.Add(Soup);
+
+            FileManager.SearchRecipe(txtSearchWord.Text, categories);
 
             //List<Recipe> searchResult = FileManager.SearchRecipe(searchText, categories);
 
