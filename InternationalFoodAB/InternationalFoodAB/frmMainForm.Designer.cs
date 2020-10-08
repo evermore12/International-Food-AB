@@ -209,6 +209,7 @@
             this.cmdAddRecipe.TabIndex = 4;
             this.cmdAddRecipe.Text = "Lägg till nytt recept";
             this.cmdAddRecipe.UseVisualStyleBackColor = true;
+            this.cmdAddRecipe.Click += new System.EventHandler(this.cmdAddRecipe_Click);
             // 
             // frmMainForm
             // 

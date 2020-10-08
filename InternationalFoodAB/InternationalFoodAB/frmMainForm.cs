@@ -123,5 +123,11 @@ namespace InternationalFoodAB
             //    ListViewItem listViewItem = new ListViewItem(recipeArray);
             //}
         }
+
+        private void cmdAddRecipe_Click(object sender, EventArgs e)
+        {
+            frmAddRecipe frmAddRecipe = new frmAddRecipe();
+            frmAddRecipe.Show();
+        }
     }
 }

@@ -35,21 +35,21 @@ namespace InternationalFoodAB.Classes
             return rows;
         }
 
-        public List<Recipe> SearchRecipe(string text, List<string> categories)
-        {
-            List<Recipe> recipeList = new List<Recipe>();
-            List<string> recipes = Read(txtRecipesPath);
+        //public List<Recipe> SearchRecipe(string text, List<string> categories)
+        //{
+        //    List<Recipe> recipeList = new List<Recipe>();
+        //    List<string> recipes = Read(txtRecipesPath);
 
-            foreach (string recipeString in recipes)
-            {
-                string[] recipeArray = recipeString.Split(';');
-                Recipe recipe = new Recipe();
-
-
-            }
+        //    foreach (string recipeString in recipes)
+        //    {
+        //        string[] recipeArray = recipeString.Split(';');
+        //        Recipe recipe = new Recipe();
 
 
-            return 
+        //    }
+
+
+        //    return 
         }
 
         //Villkor för sökfunktion som finns på "frmMainForm"
@@ -67,4 +67,4 @@ namespace InternationalFoodAB.Classes
         //    }
         //}
     }
-}
+
