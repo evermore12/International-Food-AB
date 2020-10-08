@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace InternationalFoodAB.Classes
 {
@@ -35,7 +36,7 @@ namespace InternationalFoodAB.Classes
             return rows;
         }
 
-        public static List<Recipe> GetRecipes(string text, List<string> categories)
+        public static List<Recipe> GetRecipes()
         {
             List<Recipe> recipeList = new List<Recipe>();
             List<string> recipes = Read(txtRecipesPath);
@@ -62,18 +63,32 @@ namespace InternationalFoodAB.Classes
         }
 
         //Villkor för sökfunktion som finns på "frmMainForm"
-        //public void SearchRecipe(string text, string category)
+        //public static List<ListViewItem> SearchRecipe(string text, List<RecipeType> typeList)
         //{
-        //    foreach (Recipe r in recipes)
+        //    List<ListViewItem> returnList = new List<ListViewItem>();
+
+        //    List<Recipe> recipeList = GetRecipes();
+
+        //    recipeList = recipeList.Where(recipe => recipe.Type == )
+
+
+        //    foreach (Recipe recipe in recipeList)
         //    {
+                
+
+
         //        if (r.Name.ToLower().Contains(text.ToLower()) || r.Type.Name.ToLower().Contains(text.ToLower()))
         //        {
-        //          string[] writeRecipe = {r.Type.Name, r.Name};
-        //          ListViewItem listViewItem = new ListViewItem(writeRecipe);
 
-        //          lstRecipes.Items.Add(); 
+                     
+        //            string[] writeRecipe = { r.Type.Name, r.Name };
+        //            ListViewItem listViewItem = new ListViewItem(writeRecipe);
+
+        //            lstRecipes.Items.Add();
         //        }
         //    }
+
+        //    return returnList;
         //}
     }
 }
