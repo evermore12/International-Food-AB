@@ -34,11 +34,11 @@ namespace InternationalFoodAB.Classes
             return rows;
         }
 
-        public List<Recipe> SearchRecipe(string text, List<string> categories)
-        {
-            List<string> recipes = Read(Path.Combine(basePath.Remove(basePath.IndexOf("bin\\Debug")), "Resources\\Recipes.txt"));
+        //public List<Recipe> SearchRecipe(string text, List<string> categories)
+        //{
+        //    List<string> recipes = Read(Path.Combine(basePath.Remove(basePath.IndexOf("bin\\Debug")), "Resources\\Recipes.txt"));
 
-        }
+        //}
 
         //Villkor för sökfunktion som finns på "frmMainForm"
         //public void SearchRecipe(string text, string category)
