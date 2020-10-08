@@ -10,7 +10,6 @@ namespace InternationalFoodAB
 {
     public class Recipe
     {
-        private string txtFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory.Remove(AppDomain.CurrentDomain.BaseDirectory.IndexOf("bin\\Debug")), "Resources\\Recipes.txt"); //Fint
         public RecipeType Type { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
