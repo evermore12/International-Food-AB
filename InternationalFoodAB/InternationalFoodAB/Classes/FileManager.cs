@@ -15,7 +15,7 @@ namespace InternationalFoodAB.Classes
         {
             using (StreamWriter writer = new StreamWriter(path, append))
             {
-
+                writer.WriteLine(text);
             }
         }
         public static void Read(string path)
