@@ -18,6 +18,10 @@ namespace InternationalFoodAB
         {
             FileManager.Write()
         }
+        public Recipe()
+        {
+
+        }
         public void Add(Recipe recipe)
         {
             throw new NotImplementedException();
