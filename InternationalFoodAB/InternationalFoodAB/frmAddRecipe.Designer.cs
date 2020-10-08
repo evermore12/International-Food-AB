@@ -104,7 +104,7 @@
             // lstIngredients
             // 
             this.lstIngredients.FormattingEnabled = true;
-            this.lstIngredients.Location = new System.Drawing.Point(232, 504);
+            this.lstIngredients.Location = new System.Drawing.Point(232, 511);
             this.lstIngredients.Name = "lstIngredients";
             this.lstIngredients.Size = new System.Drawing.Size(552, 108);
             this.lstIngredients.TabIndex = 6;

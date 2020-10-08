@@ -33,5 +33,17 @@ namespace InternationalFoodAB.Classes
             }
             return rows;
         }
+
+        //Villkor för sökfunktion som finns på "frmMainForm"
+        //public void SearchRecipe(string text, string category)
+        //{
+        //    foreach (Recipe r in recipes)
+        //    {
+        //        if (r.Name.ToLower().Contains(text.ToLower()) || r.Type.ToLower().Contains(text.ToLower()))
+        //        {
+
+        //        }
+        //    }
+        //}
     }
 }

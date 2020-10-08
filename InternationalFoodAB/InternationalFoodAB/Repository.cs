@@ -19,21 +19,5 @@ namespace InternationalFoodAB
                                                     new RecipeType("Soppor", InternationalFoodAB.Properties.Resources.Soup),
                                                     new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.Cake)};
         }
-
-        //public void SearchRecipe(string text, string category)
-        //{
-        //    if (cboSearchType == "Typ" && RecipeType.ToLower().Contains(text))
-        //    {
-
-        //    }
-        //    else if (cboSearchType == "Titel" && RecipeTitle.ToLower().Contains(text))
-        //    {
-
-        //    }
-        //    else if (cboSearchType == "Beskrivning" && RecipeDescription.ToLower().Contains(text))
-        //    {
-
-        //    }
-        //}
     }
 }
