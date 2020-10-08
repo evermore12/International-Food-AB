@@ -88,6 +88,7 @@
             this.picSoup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSoup.TabIndex = 7;
             this.picSoup.TabStop = false;
+            this.picSoup.Click += new System.EventHandler(this.picSoup_Click);
             // 
             // picSalad
             // 
@@ -99,6 +100,7 @@
             this.picSalad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSalad.TabIndex = 6;
             this.picSalad.TabStop = false;
+            this.picSalad.Click += new System.EventHandler(this.picSalad_Click);
             // 
             // picMeat
             // 
@@ -110,6 +112,7 @@
             this.picMeat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picMeat.TabIndex = 5;
             this.picMeat.TabStop = false;
+            this.picMeat.Click += new System.EventHandler(this.picMeat_Click);
             // 
             // picFish
             // 
@@ -121,6 +124,7 @@
             this.picFish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFish.TabIndex = 4;
             this.picFish.TabStop = false;
+            this.picFish.Click += new System.EventHandler(this.picFish_Click);
             // 
             // picCake
             // 
@@ -132,6 +136,7 @@
             this.picCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCake.TabIndex = 3;
             this.picCake.TabStop = false;
+            this.picCake.Click += new System.EventHandler(this.picCake_Click);
             // 
             // cmdSearch
             // 

@@ -15,6 +15,12 @@ namespace InternationalFoodAB
 {
     public partial class frmMainForm : Form
     {
+        public bool CakeActive { get; set; }
+        public bool FishActive { get; set; }
+        public bool MeatActive { get; set; }
+        public bool SaladActive { get; set; }
+        public bool SoupActive { get; set; }
+
         public bool IsLoggedIn { get; set; }
         public frmMainForm()
         {
@@ -58,6 +64,46 @@ namespace InternationalFoodAB
         {
             frmAddRecipe frmAddRecipe = new frmAddRecipe();
             frmAddRecipe.Show();
+        }
+
+        private void picCake_Click(object sender, EventArgs e)
+        {
+            CakeActive ^= true;
+
+            if (CakeActive) picCake.Image = InternationalFoodAB.Properties.Resources.CakeActive;
+            else picCake.Image = InternationalFoodAB.Properties.Resources.Cake;
+        }
+
+        private void picFish_Click(object sender, EventArgs e)
+        {
+            FishActive ^= true;
+
+            if (FishActive) picFish.Image = InternationalFoodAB.Properties.Resources.FishActive;
+            else picFish.Image = InternationalFoodAB.Properties.Resources.Fish;
+        }
+
+        private void picMeat_Click(object sender, EventArgs e)
+        {
+            MeatActive ^= true;
+
+            if (MeatActive) picMeat.Image = InternationalFoodAB.Properties.Resources.MeatActive;
+            else picMeat.Image = InternationalFoodAB.Properties.Resources.Meat;
+        }
+
+        private void picSalad_Click(object sender, EventArgs e)
+        {
+            SaladActive ^= true;
+
+            if (SaladActive) picSalad.Image = InternationalFoodAB.Properties.Resources.SaladActive;
+            else picSalad.Image = InternationalFoodAB.Properties.Resources.Salad;
+        }
+
+        private void picSoup_Click(object sender, EventArgs e)
+        {
+            SoupActive ^= true;
+
+            if (SoupActive) picSoup.Image = InternationalFoodAB.Properties.Resources.SoupActive;
+            else picSoup.Image = InternationalFoodAB.Properties.Resources.Soup;
         }
     }
 }

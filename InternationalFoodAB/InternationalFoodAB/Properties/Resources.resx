@@ -121,19 +121,34 @@
   <data name="Cake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="CakeActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CakeActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ErrorLog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ErrorLog.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="Fish" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FishActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FishActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Meat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Meat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MeatActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MeatActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Salad" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Salad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="SaladActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaladActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Soup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Soup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoupActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SoupeActive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -111,7 +111,12 @@
     <Content Include="Accounts.txt" />
     <Content Include="Classes\Resources\ErrorLog.txt" />
     <Content Include="Programskiss.txt" />
+    <None Include="Resources\SaladActive.png" />
+    <None Include="Resources\CakeActive.png" />
+    <None Include="Resources\FishActive.png" />
+    <None Include="Resources\MeatActive.png" />
     <Content Include="Resources\Recipe.txt" />
+    <None Include="Resources\SoupeActive.png" />
     <None Include="Resources\Soup.png" />
     <None Include="Resources\Salad.png" />
     <None Include="Resources\Meat.png" />
