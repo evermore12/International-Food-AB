@@ -44,7 +44,6 @@
             this.clnDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmdLogIn = new System.Windows.Forms.Button();
             this.lblAccount = new System.Windows.Forms.Label();
-            this.cmdTest = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSoup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSalad)).BeginInit();
@@ -211,24 +210,12 @@
             this.lblAccount.Size = new System.Drawing.Size(70, 13);
             this.lblAccount.TabIndex = 3;
             this.lblAccount.Text = "Ej inloggad";
-          //  this.lblAccount.Click += new System.EventHandler(this.lblAccount_Click);
-            // 
-            // cmdTest
-            // 
-            this.cmdTest.Location = new System.Drawing.Point(13, 664);
-            this.cmdTest.Name = "cmdTest";
-            this.cmdTest.Size = new System.Drawing.Size(84, 32);
-            this.cmdTest.TabIndex = 4;
-            this.cmdTest.Text = "Test";
-            this.cmdTest.UseVisualStyleBackColor = true;
-            this.cmdTest.Click += new System.EventHandler(this.cmdTest_Click);
             // 
             // frmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 708);
-            this.Controls.Add(this.cmdTest);
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.grbRecipe);
@@ -265,7 +252,6 @@
         public System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button cmdLogIn;
         private System.Windows.Forms.Label lblAccount;
-        private System.Windows.Forms.Button cmdTest;
         private System.Windows.Forms.ComboBox comboBox1;
     }
 }
