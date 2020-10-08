@@ -63,32 +63,25 @@ namespace InternationalFoodAB.Classes
         }
 
         //Villkor för sökfunktion som finns på "frmMainForm"
-        //public static List<ListViewItem> SearchRecipe(string text, List<RecipeType> typeList)
-        //{
-        //    List<ListViewItem> returnList = new List<ListViewItem>();
+        public static List<ListViewItem> SearchRecipe(string text, List<RecipeType> typeList)
+        {
+            List<ListViewItem> returnList = new List<ListViewItem>();
 
-        //    List<Recipe> recipeList = GetRecipes();
+            List<Recipe> recipeList = GetRecipes();
 
-        //    recipeList = recipeList.Where(recipe => recipe.Type == )
-
-
-        //    foreach (Recipe recipe in recipeList)
-        //    {
-                
+            var lambdaList = recipeList.Where(recipe => typeList.Any(type => type.Name == recipe.Type.Name) && recipe.ToString().Contains(text));
 
 
-        //        if (r.Name.ToLower().Contains(text.ToLower()) || r.Type.Name.ToLower().Contains(text.ToLower()))
-        //        {
+            foreach (var recipe in lambdaList)
+            {
 
-                     
-        //            string[] writeRecipe = { r.Type.Name, r.Name };
-        //            ListViewItem listViewItem = new ListViewItem(writeRecipe);
+                string[] listItemArray = { recipe.Type.Name, recipe.Name };
 
-        //            lstRecipes.Items.Add();
-        //        }
-        //    }
+                ListViewItem listItem = new ListViewItem(listItemArray);
+                returnList.Add(listItem);
+            }
 
-        //    return returnList;
-        //}
+            return returnList;
+        }
     }
 }
