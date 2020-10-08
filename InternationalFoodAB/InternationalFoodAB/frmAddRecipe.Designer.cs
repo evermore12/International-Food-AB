@@ -34,10 +34,12 @@
             this.txtDescription = new System.Windows.Forms.RichTextBox();
             this.lblIngredients = new System.Windows.Forms.Label();
             this.txtIngredient = new System.Windows.Forms.TextBox();
-            this.lstIngredients = new System.Windows.Forms.ListBox();
             this.cmdAddIngredient = new System.Windows.Forms.Button();
             this.cmdAdd = new System.Windows.Forms.Button();
             this.cboRecipeType = new System.Windows.Forms.ComboBox();
+            this.lstIngredients = new System.Windows.Forms.ListView();
+            this.clmIngredient = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmIngredientQuantity = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // txtRecipeName
@@ -93,14 +95,6 @@
             this.txtIngredient.Size = new System.Drawing.Size(100, 20);
             this.txtIngredient.TabIndex = 5;
             // 
-            // lstIngredients
-            // 
-            this.lstIngredients.FormattingEnabled = true;
-            this.lstIngredients.Location = new System.Drawing.Point(237, 592);
-            this.lstIngredients.Name = "lstIngredients";
-            this.lstIngredients.Size = new System.Drawing.Size(552, 108);
-            this.lstIngredients.TabIndex = 6;
-            // 
             // cmdAddIngredient
             // 
             this.cmdAddIngredient.Location = new System.Drawing.Point(451, 556);
@@ -129,14 +123,37 @@
             this.cboRecipeType.Size = new System.Drawing.Size(190, 21);
             this.cboRecipeType.TabIndex = 8;
             // 
+            // lstIngredients
+            // 
+            this.lstIngredients.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.clmIngredient,
+            this.clmIngredientQuantity});
+            this.lstIngredients.HideSelection = false;
+            this.lstIngredients.Location = new System.Drawing.Point(237, 597);
+            this.lstIngredients.Name = "lstIngredients";
+            this.lstIngredients.Size = new System.Drawing.Size(552, 148);
+            this.lstIngredients.TabIndex = 9;
+            this.lstIngredients.UseCompatibleStateImageBehavior = false;
+            this.lstIngredients.View = System.Windows.Forms.View.Details;
+            // 
+            // clmIngredient
+            // 
+            this.clmIngredient.Text = "Ingrediens";
+            this.clmIngredient.Width = 246;
+            // 
+            // clmIngredientQuantity
+            // 
+            this.clmIngredientQuantity.Text = "Mängd";
+            this.clmIngredientQuantity.Width = 135;
+            // 
             // frmAddRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 798);
+            this.ClientSize = new System.Drawing.Size(1186, 798);
+            this.Controls.Add(this.lstIngredients);
             this.Controls.Add(this.cboRecipeType);
             this.Controls.Add(this.cmdAdd);
-            this.Controls.Add(this.lstIngredients);
             this.Controls.Add(this.txtIngredient);
             this.Controls.Add(this.cmdAddIngredient);
             this.Controls.Add(this.txtDescription);
@@ -159,9 +176,11 @@
         private System.Windows.Forms.RichTextBox txtDescription;
         private System.Windows.Forms.Label lblIngredients;
         private System.Windows.Forms.TextBox txtIngredient;
-        private System.Windows.Forms.ListBox lstIngredients;
         private System.Windows.Forms.Button cmdAddIngredient;
         private System.Windows.Forms.Button cmdAdd;
         private System.Windows.Forms.ComboBox cboRecipeType;
+        public System.Windows.Forms.ColumnHeader clmIngredient;
+        private System.Windows.Forms.ColumnHeader clmIngredientQuantity;
+        public System.Windows.Forms.ListView lstIngredients;
     }
 }
