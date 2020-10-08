@@ -31,7 +31,7 @@
             this.txtRe = new System.Windows.Forms.TextBox();
             this.lblRecipeName = new System.Windows.Forms.Label();
             this.lblRecipeDescription = new System.Windows.Forms.Label();
-            this.o = new System.Windows.Forms.RichTextBox();
+            this.txtDec = new System.Windows.Forms.RichTextBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.lblIngredients = new System.Windows.Forms.Label();
             this.cmdAddIngredient = new System.Windows.Forms.Button();
@@ -65,13 +65,13 @@
             this.lblRecipeDescription.TabIndex = 1;
             this.lblRecipeDescription.Text = "Beskrivning";
             // 
-            // o
+            // txtDec
             // 
-            this.o.Location = new System.Drawing.Point(232, 205);
-            this.o.Name = "o";
-            this.o.Size = new System.Drawing.Size(552, 148);
-            this.o.TabIndex = 2;
-            this.o.Text = "";
+            this.txtDec.Location = new System.Drawing.Point(232, 205);
+            this.txtDec.Name = "txtDec";
+            this.txtDec.Size = new System.Drawing.Size(552, 148);
+            this.txtDec.TabIndex = 2;
+            this.txtDec.Text = "";
             // 
             // listView1
             // 
@@ -108,7 +108,7 @@
             this.ClientSize = new System.Drawing.Size(1143, 651);
             this.Controls.Add(this.cmdAddIngredient);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.o);
+            this.Controls.Add(this.txtDec);
             this.Controls.Add(this.lblIngredients);
             this.Controls.Add(this.lblRecipeDescription);
             this.Controls.Add(this.lblRecipeName);
@@ -125,7 +125,7 @@
         private System.Windows.Forms.TextBox txtRe;
         private System.Windows.Forms.Label lblRecipeName;
         private System.Windows.Forms.Label lblRecipeDescription;
-        private System.Windows.Forms.RichTextBox o;
+        private System.Windows.Forms.RichTextBox txtDec;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label lblIngredients;
         private System.Windows.Forms.Button cmdAddIngredient;
