@@ -38,12 +38,11 @@
             this.cmdSearch = new System.Windows.Forms.Button();
             this.txtSearchWord = new System.Windows.Forms.TextBox();
             this.grbRecipe = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lstRecipes = new System.Windows.Forms.ListView();
             this.clnType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clnTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmdLogIn = new System.Windows.Forms.Button();
             this.lblAccount = new System.Windows.Forms.Label();
-            this.cmdAddRecipe = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSoup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSalad)).BeginInit();
@@ -89,6 +88,7 @@
             this.picSoup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSoup.TabIndex = 7;
             this.picSoup.TabStop = false;
+            this.picSoup.Click += new System.EventHandler(this.picSoup_Click);
             // 
             // picSalad
             // 
@@ -100,6 +100,7 @@
             this.picSalad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSalad.TabIndex = 6;
             this.picSalad.TabStop = false;
+            this.picSalad.Click += new System.EventHandler(this.picSalad_Click);
             // 
             // picMeat
             // 
@@ -111,6 +112,7 @@
             this.picMeat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picMeat.TabIndex = 5;
             this.picMeat.TabStop = false;
+            this.picMeat.Click += new System.EventHandler(this.picMeat_Click);
             // 
             // picFish
             // 
@@ -122,6 +124,7 @@
             this.picFish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFish.TabIndex = 4;
             this.picFish.TabStop = false;
+            this.picFish.Click += new System.EventHandler(this.picFish_Click);
             // 
             // picCake
             // 
@@ -133,6 +136,7 @@
             this.picCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCake.TabIndex = 3;
             this.picCake.TabStop = false;
+            this.picCake.Click += new System.EventHandler(this.picCake_Click);
             // 
             // cmdSearch
             // 
@@ -142,6 +146,7 @@
             this.cmdSearch.TabIndex = 2;
             this.cmdSearch.Text = "Sök efter recept";
             this.cmdSearch.UseVisualStyleBackColor = true;
+            this.cmdSearch.Click += new System.EventHandler(this.cmdSearch_Click);
             // 
             // txtSearchWord
             // 
@@ -153,7 +158,7 @@
             // 
             // grbRecipe
             // 
-            this.grbRecipe.Controls.Add(this.listView1);
+            this.grbRecipe.Controls.Add(this.lstRecipes);
             this.grbRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbRecipe.Location = new System.Drawing.Point(131, 108);
             this.grbRecipe.Name = "grbRecipe";
@@ -162,32 +167,32 @@
             this.grbRecipe.TabStop = false;
             this.grbRecipe.Text = "Recepter";
             // 
-            // listView1
+            // lstRecipes
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lstRecipes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clnType,
             this.clnTitle});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(27, 35);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(531, 246);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lstRecipes.HideSelection = false;
+            this.lstRecipes.Location = new System.Drawing.Point(27, 35);
+            this.lstRecipes.Name = "lstRecipes";
+            this.lstRecipes.Size = new System.Drawing.Size(531, 246);
+            this.lstRecipes.TabIndex = 0;
+            this.lstRecipes.UseCompatibleStateImageBehavior = false;
+            this.lstRecipes.View = System.Windows.Forms.View.Details;
             // 
             // clnType
             // 
             this.clnType.Text = "Typ";
-            this.clnType.Width = 271;
+            this.clnType.Width = 204;
             // 
             // clnTitle
             // 
             this.clnTitle.Text = "Titel";
-            this.clnTitle.Width = 338;
+            this.clnTitle.Width = 293;
             // 
             // cmdLogIn
             // 
-            this.cmdLogIn.Location = new System.Drawing.Point(452, 28);
+            this.cmdLogIn.Location = new System.Drawing.Point(604, 28);
             this.cmdLogIn.Name = "cmdLogIn";
             this.cmdLogIn.Size = new System.Drawing.Size(108, 54);
             this.cmdLogIn.TabIndex = 2;
@@ -205,23 +210,11 @@
             this.lblAccount.TabIndex = 3;
             this.lblAccount.Text = "Ej inloggad";
             // 
-            // cmdAddRecipe
-            // 
-            this.cmdAddRecipe.Enabled = false;
-            this.cmdAddRecipe.Location = new System.Drawing.Point(581, 28);
-            this.cmdAddRecipe.Name = "cmdAddRecipe";
-            this.cmdAddRecipe.Size = new System.Drawing.Size(108, 54);
-            this.cmdAddRecipe.TabIndex = 4;
-            this.cmdAddRecipe.Text = "Lägg till recept";
-            this.cmdAddRecipe.UseVisualStyleBackColor = true;
-            this.cmdAddRecipe.Click += new System.EventHandler(this.cmdAddRecipe_Click);
-            // 
             // frmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 635);
-            this.Controls.Add(this.cmdAddRecipe);
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.grbRecipe);
@@ -244,7 +237,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button cmdSearch;
         private System.Windows.Forms.TextBox txtSearchWord;
         public System.Windows.Forms.PictureBox picCake;
         public System.Windows.Forms.PictureBox picFish;
@@ -254,11 +246,11 @@
         private System.Windows.Forms.GroupBox grbRecipe;
         private System.Windows.Forms.ColumnHeader clnType;
         private System.Windows.Forms.ColumnHeader clnTitle;
-        public System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button cmdLogIn;
+        public System.Windows.Forms.ListView lstRecipes;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.ComboBox cboSearchType;
-        private System.Windows.Forms.Button cmdAddRecipe;
+        public System.Windows.Forms.Button cmdSearch;
+        public System.Windows.Forms.Button cmdLogIn;
     }
 }
 
