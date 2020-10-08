@@ -23,11 +23,11 @@ namespace InternationalFoodAB
             this.Top = (MainForm.Height - this.Height) / 2;
         }
 
-        //TO-DO: logga ut knapp när vi är inloggad.
+        
 
         private void cmdLogIn_Click(object sender, EventArgs e)
         {
-            Account logIn = new Account(txtEmail.Text, txtPassword.Text);
+            Account logIn = new Account(txtEmail.Text.ToLower(), txtPassword.Text.ToLower());
 
             if (logIn.CheckInlog())
             {
