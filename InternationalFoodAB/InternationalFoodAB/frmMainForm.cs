@@ -49,11 +49,17 @@ namespace InternationalFoodAB
             }    
             
         }
-
         public void LoggedIn(string email)
         {
             cmdLogIn.Text = "Logga ut";
             lblAccount.Text = "Inloggad som: " + email;
+            cmdAddRecipe.Enabled = true;
+        }
+
+        private void cmdAddRecipe_Click(object sender, EventArgs e)
+        {
+            frmAddRecipe frmAddRecipe = new frmAddRecipe();
+            frmAddRecipe.Show();
         }
     }
 }

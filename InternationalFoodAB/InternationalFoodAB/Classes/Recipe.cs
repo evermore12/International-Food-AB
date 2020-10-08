@@ -12,5 +12,9 @@ namespace InternationalFoodAB
         public string Description { get; set; }
         public RecipeType Type { get; set; }
         public List<Ingredient> IngredientList { get; set; }
+        public Recipe()
+        {
+
+        }
     }
 }
