@@ -47,7 +47,6 @@ namespace InternationalFoodAB
                 logInContron.Show();
                 logInContron.BringToFront();
             }    
-            
         }
         public void LoggedIn(string email)
         {
@@ -55,7 +54,6 @@ namespace InternationalFoodAB
             lblAccount.Text = "Inloggad som: " + email;
             cmdAddRecipe.Enabled = true;
         }
-
         private void cmdAddRecipe_Click(object sender, EventArgs e)
         {
             frmAddRecipe frmAddRecipe = new frmAddRecipe();

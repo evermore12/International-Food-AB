@@ -58,7 +58,6 @@ namespace InternationalFoodAB
         {
             if (Email == "admin@gmail.se" && Password == "king123") return true;
             else return false;
-
         }
 
 

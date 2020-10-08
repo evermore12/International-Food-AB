@@ -17,5 +17,10 @@ namespace InternationalFoodAB
         {
             InitializeComponent();
         }
+
+        private void cmdAddIngredient_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
