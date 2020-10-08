@@ -35,7 +35,7 @@ namespace InternationalFoodAB
             }
             else
             {
-                Recipe recipe = new Recipe(txtRecipeName.Text, txtDescription.Text, (RecipeType)Repository.GetRecipeTypes().Where(x => x.Name == cboRecipeType.SelectedItem.ToString()), Ingredients);
+                Recipe recipe = new Recipe(txtRecipeName.Text, txtDescription.Text, (RecipeType)Repository.GetRecipeTypes().Where(x => x.Name == cboRecipeType.SelectedItem.ToString()).FirstOrDefault(), Ingredients);
                 MessageBox.Show("Recept " + recipe.Name + " tillagt");
 
                 txtRecipeName.Text = "";
