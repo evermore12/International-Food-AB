@@ -52,6 +52,7 @@ namespace InternationalFoodAB.Classes
                 string[] ingredients = recipeArray[3].Split('|');
                 for (int i = 0; i < ingredients.Length; i++)
                 {
+                    Ingredient ingredient = new Ingredient(ingredients[0])
                     ingredients[0]
                 }
 

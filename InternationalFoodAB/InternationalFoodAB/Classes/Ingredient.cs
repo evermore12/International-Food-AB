@@ -11,14 +11,16 @@ namespace InternationalFoodAB
     {
         public string Name { get; set; }
         public Image Picture { get; set; }
+        public string Amount { get; set; }
         public Ingredient(string name, Image picture)
         {
             Name = name;
             Picture = picture;
         }
-        public Ingredient(string name)
+        public Ingredient(string name, string amount)
         {
             Name = name;
+            Amount = amount;
         }
     }
 }
