@@ -38,7 +38,7 @@
             this.cmdSearch = new System.Windows.Forms.Button();
             this.txtSearchWord = new System.Windows.Forms.TextBox();
             this.grbRecipe = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lstRecipes = new System.Windows.Forms.ListView();
             this.clnType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clnTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmdLogIn = new System.Windows.Forms.Button();
@@ -158,7 +158,7 @@
             // 
             // grbRecipe
             // 
-            this.grbRecipe.Controls.Add(this.listView1);
+            this.grbRecipe.Controls.Add(this.lstRecipes);
             this.grbRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbRecipe.Location = new System.Drawing.Point(131, 108);
             this.grbRecipe.Name = "grbRecipe";
@@ -167,18 +167,18 @@
             this.grbRecipe.TabStop = false;
             this.grbRecipe.Text = "Recepter";
             // 
-            // listView1
+            // lstRecipes
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lstRecipes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clnType,
             this.clnTitle});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(27, 35);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(531, 246);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lstRecipes.HideSelection = false;
+            this.lstRecipes.Location = new System.Drawing.Point(27, 35);
+            this.lstRecipes.Name = "lstRecipes";
+            this.lstRecipes.Size = new System.Drawing.Size(531, 246);
+            this.lstRecipes.TabIndex = 0;
+            this.lstRecipes.UseCompatibleStateImageBehavior = false;
+            this.lstRecipes.View = System.Windows.Forms.View.Details;
             // 
             // clnType
             // 
@@ -246,7 +246,7 @@
         private System.Windows.Forms.GroupBox grbRecipe;
         private System.Windows.Forms.ColumnHeader clnType;
         private System.Windows.Forms.ColumnHeader clnTitle;
-        public System.Windows.Forms.ListView listView1;
+        public System.Windows.Forms.ListView lstRecipes;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.ComboBox cboSearchType;
         public System.Windows.Forms.Button cmdSearch;

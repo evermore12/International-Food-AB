@@ -108,12 +108,24 @@ namespace InternationalFoodAB
 
         private void cmdSearch_Click(object sender, EventArgs e)
         {
-            List<string> Categories = new List<string>();
-            if (CakeActive) Categories.Add("Cake");
-            if (FishActive) Categories.Add("Cake");
-            if (MeatActive) Categories.Add("Cake");
-            if (SaladActive) Categories.Add("Cake");
-            if (SoupActive) Categories.Add("Cake");
+            string searchText = txtSearchWord.Text;
+
+            List<string> categories = new List<string>();
+            if (CakeActive) categories.Add("Cake");
+            if (FishActive) categories.Add("Cake");
+            if (MeatActive) categories.Add("Cake");
+            if (SaladActive) categories.Add("Cake");
+            if (SoupActive) categories.Add("Cake");
+
+            List<Recipe> searchResult = FileManager.SearchRecipe(searchText, categories);
+
+            foreach (Recipe recipe in searchResult)
+            {
+
+                string[] recipeArray = { recipe.Type.Name, recipe.Name };
+
+                ListViewItem listViewItem = new ListViewItem(recipeArray);
+            }
         }
     }
 }
