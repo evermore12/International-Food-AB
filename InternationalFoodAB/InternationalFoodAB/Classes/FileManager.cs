@@ -45,11 +45,19 @@ namespace InternationalFoodAB.Classes
                 string[] recipeArray = recipeString.Split(';');
                 Recipe recipe = new Recipe();
 
+                recipe.Type.Name = recipeArray[0];
+                recipe.Name = recipeArray[1];
+                recipe.Description = recipeArray[2];
+
+                string[] ingredients = recipeArray[3].Split('|');
+                for (int i = 0; i < ingredients.Length; i++)
+                {
+
+                }
 
             }
 
-
-            return 
+            return recipeList;
         }
 
         //Villkor för sökfunktion som finns på "frmMainForm"
