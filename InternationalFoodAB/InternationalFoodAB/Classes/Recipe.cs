@@ -15,12 +15,13 @@ namespace InternationalFoodAB
         public string Description { get; set; }
         public RecipeType Type { get; set; }
         public List<Ingredient> IngredientList { get; set; }
-        public Recipe()
+        public Recipe(string name, string descption, RecipeType type, List<Ingredient> ingredients)
         {
             
         }
         public void Add(Recipe recipe)
         {
+            throw new NotImplementedException();
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string fullPath =  Path.Combine(basePath.Remove(basePath.IndexOf("bin\\Debug")), "Resources\\Recipes.txt");
             FileManager.Write(fullPath, "Temp");

@@ -28,7 +28,6 @@ namespace InternationalFoodAB
 
             //grbRecipe.Left = this.Width - grbRecipe.Width / 2;
             //grbSearch.Left = this.Width - grbRecipe.Width / 2;
-
         }
         private void cmdLogIn_Click(object sender, EventArgs e)
         {

@@ -7,17 +7,20 @@ using System.Threading.Tasks;
 
 namespace InternationalFoodAB
 {
-    public class Repository
+    public static class Repository
     {
-        public List<RecipeType> RecipeTypeList { get; set; }
-
-        public Repository()
+        public static List<RecipeType> GetRecipeTypes()
         {
-            RecipeTypeList = new List<RecipeType> { new RecipeType("Kötträtter", InternationalFoodAB.Properties.Resources.Meat),
-                                                    new RecipeType("Fiskrätter", InternationalFoodAB.Properties.Resources.Fish),
-                                                    new RecipeType("Sallader", InternationalFoodAB.Properties.Resources.Salad),
-                                                    new RecipeType("Soppor", InternationalFoodAB.Properties.Resources.Soup),
-                                                    new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.Cake)};
+            return new List<RecipeType>
+            {
+                new RecipeType("Kötträtter", InternationalFoodAB.Properties.Resources.Meat),
+                new RecipeType("Fiskrätter", InternationalFoodAB.Properties.Resources.Fish),
+                new RecipeType("Sallader", InternationalFoodAB.Properties.Resources.Salad),
+                new RecipeType("Soppor", InternationalFoodAB.Properties.Resources.Soup),
+                new RecipeType("Desserter/kakor", InternationalFoodAB.Properties.Resources.Cake)
+            };
         }
     }
 }
+
+    
