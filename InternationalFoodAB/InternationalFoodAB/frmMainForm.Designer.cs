@@ -41,7 +41,6 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.clnType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clnTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clnDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cmdLogIn = new System.Windows.Forms.Button();
             this.lblAccount = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -64,7 +63,7 @@
             this.groupBox1.Controls.Add(this.cmdSearch);
             this.groupBox1.Controls.Add(this.txtSearchWord);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(575, 507);
+            this.groupBox1.Location = new System.Drawing.Point(155, 431);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(557, 172);
             this.groupBox1.TabIndex = 0;
@@ -155,9 +154,9 @@
             // 
             this.grbRecipe.Controls.Add(this.listView1);
             this.grbRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbRecipe.Location = new System.Drawing.Point(131, 91);
+            this.grbRecipe.Location = new System.Drawing.Point(131, 108);
             this.grbRecipe.Name = "grbRecipe";
-            this.grbRecipe.Size = new System.Drawing.Size(1001, 320);
+            this.grbRecipe.Size = new System.Drawing.Size(581, 303);
             this.grbRecipe.TabIndex = 1;
             this.grbRecipe.TabStop = false;
             this.grbRecipe.Text = "Recepter";
@@ -166,34 +165,28 @@
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clnType,
-            this.clnTitle,
-            this.clnDescription});
+            this.clnTitle});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(27, 35);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(950, 262);
+            this.listView1.Size = new System.Drawing.Size(531, 246);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // clnType
             // 
-            this.clnType.Text = "Type";
-            this.clnType.Width = 160;
+            this.clnType.Text = "Typ";
+            this.clnType.Width = 271;
             // 
             // clnTitle
             // 
             this.clnTitle.Text = "Titel";
-            this.clnTitle.Width = 256;
-            // 
-            // clnDescription
-            // 
-            this.clnDescription.Text = "Beskrivning";
-            this.clnDescription.Width = 508;
+            this.clnTitle.Width = 338;
             // 
             // cmdLogIn
             // 
-            this.cmdLogIn.Location = new System.Drawing.Point(1169, 28);
+            this.cmdLogIn.Location = new System.Drawing.Point(604, 28);
             this.cmdLogIn.Name = "cmdLogIn";
             this.cmdLogIn.Size = new System.Drawing.Size(108, 54);
             this.cmdLogIn.TabIndex = 2;
@@ -215,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1311, 708);
+            this.ClientSize = new System.Drawing.Size(813, 635);
             this.Controls.Add(this.lblAccount);
             this.Controls.Add(this.cmdLogIn);
             this.Controls.Add(this.grbRecipe);
@@ -248,7 +241,6 @@
         private System.Windows.Forms.GroupBox grbRecipe;
         private System.Windows.Forms.ColumnHeader clnType;
         private System.Windows.Forms.ColumnHeader clnTitle;
-        private System.Windows.Forms.ColumnHeader clnDescription;
         public System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button cmdLogIn;
         private System.Windows.Forms.Label lblAccount;
