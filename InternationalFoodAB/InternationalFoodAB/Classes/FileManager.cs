@@ -72,17 +72,30 @@ namespace InternationalFoodAB.Classes
             List<ListViewItem> returnList = new List<ListViewItem>();
 
             List<Recipe> recipeList = GetRecipes();
+            var lambdaList = recipeList.Where(recipe => typeList.Any(type => type.Name == recipe.Type.Name));
 
-            var lambdaList = recipeList.Where(recipe => typeList.Any(type => type.Name == recipe.Type.Name) && recipe.ToString().Contains(text));
+           
 
-
-            foreach (var recipe in lambdaList)
+            foreach (Recipe recipe in lambdaList)
             {
+                string recipeString = recipe.Type.Name + recipe.Name;
+                foreach (Ingredient ingredient in recipe.Ingredients) recipeString += ingredient.Name;
 
-                string[] listItemArray = { recipe.Type.Name, recipe.Name };
-
-                ListViewItem listItem = new ListViewItem(listItemArray);
-                returnList.Add(listItem);
+                if (text != "")
+                {
+                    if (recipeString.Contains(text))
+                    {
+                        string[] listItemArray = { recipe.Type.Name, recipe.Name };
+                        ListViewItem listItem = new ListViewItem(listItemArray);
+                        returnList.Add(listItem);
+                    }
+                }
+                else
+                {
+                    string[] listItemArray = { recipe.Type.Name, recipe.Name };
+                    ListViewItem listItem = new ListViewItem(listItemArray);
+                    returnList.Add(listItem);
+                }
             }
 
             return returnList;
